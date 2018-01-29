@@ -4,32 +4,39 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Movement : MonoBehaviour {
-    [SerializeField]
-    NavMeshAgent agent;
+    [SerializeField] NavMeshAgent agent;
     int zLocation = 2;
 
+	[SerializeField] float walkSpeed;
+	[SerializeField] float runSpeed;
+	[SerializeField] float runDistance;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+	//Navigate on mouse click
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             Navigate();
+			SetSpeed ();
         }
 	}
 
+	//Set destination based on mouse location
     void Navigate() {
         agent.SetDestination(GetMouseLocation());
     }
 
+	//Get mouse location in world space
     Vector3 GetMouseLocation() {
         Vector3 pos = Input.mousePosition;
         pos.z = 10.0f;
         pos = Camera.main.ScreenToWorldPoint(pos);
-        Debug.Log("Mouse position: " + pos);
         return pos;
     }
+
+	void SetSpeed(){
+		if (agent.remainingDistance > runDistance) {
+			agent.speed = runSpeed;
+		} else {
+			agent.speed = walkSpeed;
+		}
+	}
 }
