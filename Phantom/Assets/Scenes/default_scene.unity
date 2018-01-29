@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 90304063}
   - component: {fileID: 90304062}
-  - component: {fileID: 90304061}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -130,18 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &90304061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 90304060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 078d1f6db5fe0f64ab9bd5e2d57ebd05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1520088230}
 --- !u!212 &90304062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -407,6 +394,7 @@ GameObject:
   - component: {fileID: 1520088232}
   - component: {fileID: 1520088231}
   - component: {fileID: 1520088230}
+  - component: {fileID: 1520088235}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -503,6 +491,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520088235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520088229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078d1f6db5fe0f64ab9bd5e2d57ebd05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 1520088230}
 --- !u!1 &1915953631
 GameObject:
   m_ObjectHideFlags: 0
