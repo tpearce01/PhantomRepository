@@ -12,11 +12,15 @@ public class Movement : MonoBehaviour {
 	[SerializeField] float runDistance;
 
 	//Navigate on mouse click
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+	void FixedUpdate () {
+		
+        if (agent.isActiveAndEnabled && Input.GetKeyDown(KeyCode.Mouse0)) {
             Navigate();
 			SetSpeed ();
+			PlayerEventTrigger.instance.DeactivateTrigger ();
         }
+        
+
 	}
 
 	//Set destination based on mouse location
@@ -32,8 +36,9 @@ public class Movement : MonoBehaviour {
         return pos;
     }
 
+	//Set movement speed based on distance to destination
 	void SetSpeed(){
-		if (agent.remainingDistance > runDistance) {
+		if (Mathf.Abs(agent.destination.x - gameObject.transform.position.x) > runDistance) {
 			agent.speed = runSpeed;
 		} else {
 			agent.speed = walkSpeed;
