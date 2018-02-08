@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour {
 	Vector3 defaultScale;
 	bool gaining = true;
-	public float magnitudeGain;
+	public float magnitudeGain = 0.5f;
 	[SerializeField] GameObject popup;
 	[SerializeField] GameObject spriteObject;
 	[SerializeField] Color hoverColor;
 	Color defaultColor = Color.white;
+    [SerializeField] Text floatingText;
+    [SerializeField] string textToDisplay;
+    bool inRange;
 
 	// Use this for initialization
 	void Start () {
 		defaultScale = gameObject.transform.localScale;
+        floatingText.text = textToDisplay;
 	}
 	
 	// Update is called once per frame
@@ -54,4 +59,16 @@ public class Interactable : MonoBehaviour {
 	public virtual void TriggerEvent (){
 
 	}
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            inRange = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            inRange = false;
+        }
+    }
 }
