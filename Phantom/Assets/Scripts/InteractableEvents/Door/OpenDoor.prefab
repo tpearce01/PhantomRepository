@@ -156,6 +156,7 @@ MonoBehaviour:
   hoverColor: {r: 0, g: 0.9411765, b: 0.045436185, a: 1}
   floatingText: {fileID: 114291951213395056}
   textToDisplay: Open Door
+  activationDistance: 0
   doorObj: {fileID: 0}
 --- !u!114 &114291951213395056
 MonoBehaviour:

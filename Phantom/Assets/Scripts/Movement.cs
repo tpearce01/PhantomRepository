@@ -13,14 +13,11 @@ public class Movement : MonoBehaviour {
 
 	//Navigate on mouse click
 	void FixedUpdate () {
-		
         if (agent.isActiveAndEnabled && Input.GetKeyDown(KeyCode.Mouse0)) {
             Navigate();
 			SetSpeed ();
 			PlayerEventTrigger.instance.DeactivateTrigger ();
         }
-        
-
 	}
 
 	//Set destination based on mouse location

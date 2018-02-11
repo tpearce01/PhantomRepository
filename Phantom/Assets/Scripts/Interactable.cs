@@ -13,7 +13,9 @@ public class Interactable : MonoBehaviour {
 	Color defaultColor = Color.white;
     [SerializeField] Text floatingText;
     [SerializeField] string textToDisplay;
+	[SerializeField] float activationDistance;
     bool inRange;
+	bool active;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,16 @@ public class Interactable : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		Idle ();
+		CheckActivate ();
+	}
+
+	void CheckActivate(){
+		if(active){
+			CheckRange ();
+		}
+		if (inRange && active && PlayerEventTrigger.instance.triggerActive) {
+			TriggerEvent ();
+		}
 	}
 
 	void Idle(){
@@ -52,23 +64,17 @@ public class Interactable : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		TriggerEvent ();
 		PlayerEventTrigger.instance.ActivateTrigger ();
+		active = true;
 	}
 
 	public virtual void TriggerEvent (){
 
 	}
 
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player")) {
-            inRange = true;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player")) {
-            inRange = false;
-        }
-    }
+	void CheckRange(){
+		if(Vector2.Distance((Vector2)gameObject.transform.position, (Vector2)Player.instance.gameObject.transform.position) < activationDistance){
+			inRange = true;
+		}
+	}
 }
