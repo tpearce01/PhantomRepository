@@ -9,7 +9,7 @@ public class PlayerEventTrigger : MonoBehaviour {
 	public bool triggerActive;
 	public bool activeThisFrame;
 
-	void Awake(){
+	void OnEnable(){
 		instance = this;
 	}
 
@@ -25,10 +25,7 @@ public class PlayerEventTrigger : MonoBehaviour {
 	}
 
 	public void DeactivateTrigger(){
-		if (!activeThisFrame) {
-			triggerActive = false;
-		}
+		triggerActive = false;
 	}
-
 }
 

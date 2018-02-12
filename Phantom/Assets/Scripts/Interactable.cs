@@ -73,8 +73,8 @@ public class Interactable : MonoBehaviour {
 	}
 
 	void CheckRange(){
-		if(Vector2.Distance((Vector2)gameObject.transform.position, (Vector2)Player.instance.gameObject.transform.position) < activationDistance){
+		if (Vector2.Distance ((Vector2)gameObject.transform.position, (Vector2)Player.instance.gameObject.transform.position) < activationDistance) {
 			inRange = true;
-		}
+		} 
 	}
 }

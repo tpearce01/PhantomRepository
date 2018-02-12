@@ -14,17 +14,25 @@ public class CompanionMovement : MonoBehaviour {
 
 	[SerializeField] GameObject target;
 
+	void OnEnable(){
+		agent.stoppingDistance = 2;
+		agent.SetDestination (agent.gameObject.transform.position);
+	}
+
+	void OnDisable(){
+		agent.stoppingDistance = 0;
+	}
+
 	//Navigate on mouse click
 	void FixedUpdate () {
-		if (agent.isActiveAndEnabled) {
-			Navigate();
-			SetSpeed ();
-		}
+		Navigate();
+		SetSpeed ();
 	}
 
 	//Set destination based on mouse location
 	void Navigate() {
 		agent.SetDestination(target.transform.position);
+		this.gameObject.GetComponent<NavMeshAgent>().destination = agent.destination;
 	}
 
 	//Set movement speed based on distance to destination

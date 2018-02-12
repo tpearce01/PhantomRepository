@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
 	public static Camera camera;
-	public GameObject target;
+	public static GameObject target;
 	public float sizeLerpSpeed;
 	public float followLerpSpeed;
 	public Vector2 offset;

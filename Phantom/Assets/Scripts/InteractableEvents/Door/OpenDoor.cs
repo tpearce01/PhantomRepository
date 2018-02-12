@@ -11,4 +11,5 @@ public class OpenDoor : Interactable {
         doorObj.SetActive(false);
         gameObject.SetActive(false);
     }
+
 }

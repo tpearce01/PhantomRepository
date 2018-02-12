@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 	public static Player instance;
 	NavMeshAgent agent;
 
-	void Awake(){
+	void OnEnable(){
 		instance = this;
 		agent = gameObject.GetComponent<NavMeshAgent> ();
 	}
