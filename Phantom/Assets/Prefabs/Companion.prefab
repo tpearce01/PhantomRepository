@@ -23,13 +23,14 @@ GameObject:
   - component: {fileID: 136177013669619230}
   - component: {fileID: 23831329783006332}
   - component: {fileID: 195931042793857900}
-  - component: {fileID: 114512576598632702}
-  - component: {fileID: 114168440196158248}
-  - component: {fileID: 114431005512846658}
   - component: {fileID: 54645368339229032}
-  m_Layer: 0
+  - component: {fileID: 114314264475673402}
+  - component: {fileID: 114765930232309266}
+  - component: {fileID: 114757789856934324}
+  - component: {fileID: 114311682261114674}
+  m_Layer: 9
   m_Name: Companion
-  m_TagString: Player
+  m_TagString: Companion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068383218626912}
   - component: {fileID: 212447065839718336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792044411540310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: -2}
+  m_LocalPosition: {x: 0, y: -0.5, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4900552990260144}
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599532026426012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.84, y: -1.166667, z: 2}
+  m_LocalPosition: {x: 2.5, y: -1.166667, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4068383218626912}
@@ -133,45 +134,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 64
   m_CollisionDetection: 0
---- !u!114 &114168440196158248
+--- !u!114 &114311682261114674
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599532026426012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff1f9a6217d84fd0ade146514f10ace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerActive: 0
-  activeThisFrame: 0
---- !u!114 &114431005512846658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1599532026426012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f679992817195429d825074b8e7216f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114512576598632702
+--- !u!114 &114314264475673402
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599532026426012}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aea342c251034e348868fdf630c491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 195931042793857900}
+  walkSpeed: 4
+  runSpeed: 4
+  runDistance: 2
+  target: {fileID: 0}
+--- !u!114 &114757789856934324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599532026426012}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 078d1f6db5fe0f64ab9bd5e2d57ebd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 195931042793857900}
   walkSpeed: 2
-  runSpeed: 5
+  runSpeed: 4
   runDistance: 3
+--- !u!114 &114765930232309266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599532026426012}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff1f9a6217d84fd0ade146514f10ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerActive: 0
+  activeThisFrame: 0
 --- !u!136 &136177013669619230
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -193,9 +210,9 @@ NavMeshAgent:
   m_GameObject: {fileID: 1599532026426012}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Radius: 0.1
+  m_Speed: 4
+  m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 0
   m_StoppingDistance: 0
@@ -241,7 +258,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 173eb0e040c52014aa2357bfaa06457d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.61764705, g: 0.71521294, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

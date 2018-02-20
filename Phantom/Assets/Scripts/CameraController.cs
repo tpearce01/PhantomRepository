@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour {
 		target = GameObject.FindGameObjectWithTag ("Player");
 	}
 
-	void Update(){
+	void LateUpdate(){
 		Follow ();
 		Resize ();
 	}

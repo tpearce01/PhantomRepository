@@ -12,12 +12,9 @@ public class Movement : MonoBehaviour {
 	[SerializeField] float runDistance;
 
 	void OnEnable(){
+		gameObject.GetComponent<NavMeshAgent>().stoppingDistance = 0;
 		agent.stoppingDistance = 0;
 		agent.SetDestination (agent.gameObject.transform.position);
-	}
-
-	void OnDisable(){
-		agent.stoppingDistance = 2;
 	}
 
 	//Navigate on mouse click
@@ -34,7 +31,6 @@ public class Movement : MonoBehaviour {
 	//Set destination based on mouse location
     void Navigate() {
         agent.SetDestination(GetMouseLocation());
-		Debug.Log("Active player destination: " + agent.destination);
     }
 
 	//Get mouse location in world space

@@ -15,12 +15,9 @@ public class CompanionMovement : MonoBehaviour {
 	[SerializeField] GameObject target;
 
 	void OnEnable(){
+		gameObject.GetComponent<NavMeshAgent> ().stoppingDistance = 2;
 		agent.stoppingDistance = 2;
 		agent.SetDestination (agent.gameObject.transform.position);
-	}
-
-	void OnDisable(){
-		agent.stoppingDistance = 0;
 	}
 
 	//Navigate on mouse click
@@ -37,10 +34,6 @@ public class CompanionMovement : MonoBehaviour {
 
 	//Set movement speed based on distance to destination
 	void SetSpeed(){
-		if (Mathf.Abs(agent.destination.x - gameObject.transform.position.x) > runDistance) {
-			agent.speed = runSpeed;
-		} else {
-			agent.speed = walkSpeed;
-		}
+		agent.speed = Player.instance.gameObject.GetComponent<NavMeshAgent> ().speed;
 	}
 }
