@@ -19,4 +19,16 @@ public class Player : MonoBehaviour {
 	public void ActivateAgent(){
 		agent.enabled = true;
 	}
+
+	public void DisableMovement(){
+		gameObject.GetComponent<NavMeshAgent> ().enabled = false;
+		gameObject.GetComponent<Movement> ().enabled = false;
+		gameObject.GetComponent<Rigidbody> ().useGravity = false;
+	}
+
+	public void EnableMovement(){
+		gameObject.GetComponent<NavMeshAgent> ().enabled = true;
+		gameObject.GetComponent<Movement> ().enabled = true;
+		gameObject.GetComponent<Rigidbody> ().useGravity = true;
+	}
 }

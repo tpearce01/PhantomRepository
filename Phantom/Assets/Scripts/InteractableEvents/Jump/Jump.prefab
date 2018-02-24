@@ -220,6 +220,7 @@ MonoBehaviour:
   hoverColor: {r: 0.22745098, g: 0.83137256, b: 0.25490198, a: 1}
   floatingText: {fileID: 114921755628368508}
   textToDisplay: Jump
+  activationDistance: 0
   destination: {x: 5, y: 0, z: 0}
   initialAngle: 45
 --- !u!114 &114921755628368508
