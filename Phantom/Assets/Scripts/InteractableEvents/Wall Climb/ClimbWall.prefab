@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4473916488374954}
   - component: {fileID: 212932265037128704}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,9 +87,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4330917886370134}
   - component: {fileID: 58006501337812104}
-  - component: {fileID: 114044047798358024}
+  - component: {fileID: 114984104312464984}
   m_Layer: 0
-  m_Name: OpenDoor
+  m_Name: ClimbTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,25 +300,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114044047798358024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559673419101004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b8563ba5d0285245b974bda14b2fc54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnitudeGain: 0.5
-  popup: {fileID: 1031994189164678}
-  spriteObject: {fileID: 1523712817883654}
-  hoverColor: {r: 0, g: 0.9411765, b: 0.045436185, a: 1}
-  floatingText: {fileID: 114914500579792304}
-  textToDisplay: Open Door
-  activationDistance: 1
-  doorObj: {fileID: 1132696911363496}
 --- !u!114 &114205612043650178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -416,6 +397,34 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Interact
+--- !u!114 &114984104312464984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559673419101004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485bc1edd9d17426786a293352adcb53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitudeGain: 0.5
+  popup: {fileID: 1031994189164678}
+  spriteObject: {fileID: 1523712817883654}
+  hoverColor: {r: 0, g: 0.8235294, b: 0.005679467, a: 1}
+  floatingText: {fileID: 114914500579792304}
+  textToDisplay: Climb
+  activationDistance: 1
+  player: {fileID: 0}
+  companion: {fileID: 0}
+  points:
+  - destination: {x: -4.3, y: 1}
+    speed: 5
+  - destination: {x: -7.3, y: 1}
+    speed: 5
+  - destination: {x: -7.3, y: -1.16}
+    speed: 5
+  wallCollider: {fileID: 65749027668075684}
 --- !u!208 &208458631584837358
 NavMeshObstacle:
   m_ObjectHideFlags: 1
