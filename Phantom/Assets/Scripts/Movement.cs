@@ -5,18 +5,27 @@ using UnityEngine.AI;
 
 public class Movement : MonoBehaviour {
     [SerializeField] NavMeshAgent agent;
-    int zLocation = 2;
+    //int zLocation = 2;
 
 	[SerializeField] float walkSpeed;
 	[SerializeField] float runSpeed;
 	[SerializeField] float runDistance;
 
+	void OnEnable(){
+		gameObject.GetComponent<NavMeshAgent>().stoppingDistance = 0;
+		agent.stoppingDistance = 0;
+		agent.SetDestination (agent.gameObject.transform.position);
+	}
+
 	//Navigate on mouse click
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+	void FixedUpdate () {
+        if (/*agent.isActiveAndEnabled && */Input.GetKeyDown(KeyCode.Mouse0)) {
             Navigate();
 			SetSpeed ();
+			PlayerEventTrigger.instance.DeactivateTrigger ();
+
         }
+		this.gameObject.GetComponent<NavMeshAgent>().destination = agent.destination;
 	}
 
 	//Set destination based on mouse location
@@ -32,8 +41,9 @@ public class Movement : MonoBehaviour {
         return pos;
     }
 
+	//Set movement speed based on distance to destination
 	void SetSpeed(){
-		if (agent.remainingDistance > runDistance) {
+		if (Mathf.Abs(agent.destination.x - gameObject.transform.position.x) > runDistance) {
 			agent.speed = runSpeed;
 		} else {
 			agent.speed = walkSpeed;
