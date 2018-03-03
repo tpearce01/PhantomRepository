@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClimbWall : Interactable {
-	public GameObject player;
-	public GameObject companion;
+	GameObject player;
+	GameObject companion;
 
 	public MovementPoint[] points;
 
@@ -13,6 +13,9 @@ public class ClimbWall : Interactable {
 	bool triggered = false;
 
 	public override void TriggerEvent(){
+		player = Player.instance.gameObject;
+		companion = GameObject.FindGameObjectWithTag ("Companion");
+
 		Debug.Log ("Triggered");
 		if (!triggered) {
 			Player.instance.DisableMovement ();
@@ -40,6 +43,9 @@ public class ClimbWall : Interactable {
 		wallCollider.enabled = true;
 		Player.instance.EnableMovement ();
 		Debug.Log ("Done");
+
+		PlayerEventTrigger.instance.DeactivateTrigger ();
+		triggered = false;
 	}
 
 	[System.Serializable]

@@ -20,7 +20,9 @@ public class ChangeCharacter : MonoBehaviour {
 
 
 		characters[i].layer = 8; //Player
+		characters[i].tag = "Player";
 		activeCharacter.layer = 9; //Companion
+		activeCharacter.tag = "Companion";
 
 		//Set activeCharacter
 		activeCharacter = characters [i];
