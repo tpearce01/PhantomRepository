@@ -251,6 +251,9 @@ MonoBehaviour:
   popup: {fileID: 1488878239670466}
   spriteObject: {fileID: 1224425128162128}
   hoverColor: {r: 0.2260489, g: 0.8308824, b: 0.2552478, a: 1}
+  floatingText: {fileID: 0}
+  textToDisplay: 
+  activationDistance: 0
 --- !u!212 &212639368233770664
 SpriteRenderer:
   m_ObjectHideFlags: 1
