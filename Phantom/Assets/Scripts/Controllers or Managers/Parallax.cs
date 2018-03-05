@@ -12,9 +12,9 @@ public class Parallax : MonoBehaviour {
 	void SetPosition(){
 		for (int i = 0; i < backgroundLayers.Length; i++) {
 			//background[0] is in good starting position
-			backgroundLayers[i].backgrounds [0].transform.position = new Vector3 (backgroundLayers[i].backgrounds[0].transform.position.x, backgroundLayers[i].backgrounds [0].transform.position.y, zPosition);
-			backgroundLayers[i].backgrounds [1].transform.position = new Vector3 (backgroundLayers[i].background.bounds.max.x * 2, backgroundLayers[i].backgrounds [1].transform.position.y, zPosition);
-			backgroundLayers[i].backgrounds [2].transform.position = new Vector3 (backgroundLayers[i].background.bounds.max.x * 4, backgroundLayers[i].backgrounds [2].transform.position.y, zPosition);
+			backgroundLayers[i].backgrounds [0].transform.position = new Vector3 (backgroundLayers[i].backgrounds[0].transform.position.x - backgroundLayers[i].background.bounds.max.x/2f, backgroundLayers[i].backgrounds [0].transform.position.y, zPosition);
+			backgroundLayers[i].backgrounds [1].transform.position = new Vector3 (backgroundLayers[i].background.bounds.max.x * 1.5f, backgroundLayers[i].backgrounds [1].transform.position.y, zPosition);
+			backgroundLayers[i].backgrounds [2].transform.position = new Vector3 (backgroundLayers[i].background.bounds.max.x * 3.5f, backgroundLayers[i].backgrounds [2].transform.position.y, zPosition);
 		}
 	}
 
