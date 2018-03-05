@@ -92,21 +92,78 @@ MonoBehaviour:
     type: 2}
   dialogueUI: {fileID: 1806143512802316}
   conversation:
-  - name: test1
-    text: Testing dialogue
-    timeToDisplay: 0
-  - name: test2
-    text: Test
-    timeToDisplay: 3
-  - name: test1
-    text: Testing dialogue
-    timeToDisplay: 6
-  - name: test2
-    text: test
-    timeToDisplay: 9
-  - name: test1
-    text: Testing dialogue
+  - name: Veronica
+    text: Tell me why we're going again?
+    timeToDisplay: 4
+  - name: Robbie
+    text: It's his birthday.
+    timeToDisplay: 8
+  - name: Veronica
+    text: I know that. I mean, why here?
     timeToDisplay: 12
+  - name: Robbie
+    text: Well you know he's always been like this, looking for adventure and whatnot.
+      And he's been dying for weeks to check out this park.
+    timeToDisplay: 16
+  - name: Veronica
+    text: Great. So we're going to an abandoned park for his birthday because he wants
+      to see some broken buildings.
+    timeToDisplay: 20
+  - name: Robbie
+    text: You can't forget about the ghosts.
+    timeToDisplay: 24
+  - name: Veronica
+    text: Right...the ghosts. Wait, aren't there security guards?
+    timeToDisplay: 28
+  - name: Robbie
+    text: Brian said he had that covered. Apparently he scoped it out last week. One
+      security guard roams the premises but only around the perimeter.
+    timeToDisplay: 32
+  - name: Robbie
+    text: People are able to sneak in and out all the time so we should be ok once
+      we actually get inside. There's no surveillance cameras either.
+    timeToDisplay: 36
+  - name: Veronica
+    text: I still think this is stupid.
+    timeToDisplay: 40
+  - name: Veronica
+    text: So how much longer is it 'til we're there?
+    timeToDisplay: 50
+  - name: Robbie
+    text: Almost. It's only about two more miles. Hey Chris, you ok? You haven't really
+      said anything this whole time.
+    timeToDisplay: 54
+  - name: Christopher
+    text: Uh, I'm fine. It's just...I'm not really into this whole idea.
+    timeToDisplay: 58
+  - name: Robbie
+    text: You mean the curse?
+    timeToDisplay: 62
+  - name: Christopher
+    text: '...'
+    timeToDisplay: 66
+  - name: Veronica
+    text: Oooh. Are you telling me you're scared?
+    timeToDisplay: 70
+  - name: Christopher
+    text: Maybe just a little
+    timeToDisplay: 74
+  - name: Robbie
+    text: It's all just hoaxes and stories. I don't think anything's going to happen.
+      We should be fine.
+    timeToDisplay: 78
+  - name: Christopher
+    text: Yeah...just fine...
+    timeToDisplay: 82
+  - name: Christopher
+    text: Hey...did you guys see that?
+    timeToDisplay: 92
+  - name: Veronica
+    text: What?
+    timeToDisplay: 96
+  - name: Christopher
+    text: Nothing...nevermind.
+    timeToDisplay: 100
 --- !u!114 &114462221675967490
 MonoBehaviour:
   m_ObjectHideFlags: 1

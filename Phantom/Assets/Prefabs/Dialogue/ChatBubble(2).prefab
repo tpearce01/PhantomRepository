@@ -116,7 +116,7 @@ MonoBehaviour:
   chatBubbles:
   - {fileID: 1477776836875180}
   - {fileID: 1181449629488940}
-  numChatBubblesToDisplay: 9
+  numChatBubblesToDisplay: 10
 --- !u!212 &212037418504619132
 SpriteRenderer:
   m_ObjectHideFlags: 1
