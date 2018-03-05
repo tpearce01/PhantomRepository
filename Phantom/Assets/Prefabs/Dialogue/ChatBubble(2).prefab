@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4889783529450972}
   - component: {fileID: 114267389182069018}
   m_Layer: 0
-  m_Name: Chat1
+  m_Name: ChatBubble(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
