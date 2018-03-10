@@ -74,6 +74,12 @@ public static class PlayerInventory {
         }
         Debug.Log("GetData(): " + toReturn);
 
+		//TESTING ONLY - IF FILE IS EMPTY, RETURN 'SAMPLE ITEM' TO ENSURE ITEM IS AVAILABLE
+		if (items.Count == 0) {
+			toReturn = "Sample Item";
+		}
+		//END TESTING
+
         return toReturn;
     }
 }

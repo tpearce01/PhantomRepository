@@ -11,11 +11,12 @@ public class Inventory : MonoBehaviour {
     [SerializeField] GameObject selector;
 
     void Awake() {
-        PlayerInventory.LoadInventory();
+        
     }
 
 	// Use this for initialization
 	void Start () {
+		PlayerInventory.LoadInventory();
         SetInventory();
 	}
 
