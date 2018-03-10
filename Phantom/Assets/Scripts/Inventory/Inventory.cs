@@ -10,10 +10,6 @@ public class Inventory : MonoBehaviour {
 	[SerializeField] GameObject gridLayout;
     [SerializeField] GameObject selector;
 
-    void Awake() {
-        
-    }
-
 	// Use this for initialization
 	void Start () {
 		PlayerInventory.LoadInventory();
@@ -73,28 +69,3 @@ public class Inventory : MonoBehaviour {
         PlayerInventory.SaveInventory();
     }
 }
-
-
-
-/*
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.I)){
-			OpenInventory();
-		}
-	}
-
-	void OpenInventory(){
-		inventoryPanel.SetActive (true);
-		StartCoroutine (Enlarge ());
-	}
-
-	IEnumerator Enlarge(){
-		RectTransform rt = inventoryPanel.GetComponent<RectTransform> ();
-		rt.localScale = new Vector3 (0, 0, 0);
-		for (int i = 0; i < 25; i++) {
-			rt.transform.localScale = new Vector3 (rt.localScale.x + .03f, rt.localScale.y + .03f, rt.localScale.z + .03f);
-			yield return new WaitForSeconds (.01f);
-		}
-	}
-    */
