@@ -12,24 +12,27 @@ public class Map : MonoBehaviour
     // Update is called once per frame
 
 
-    
+
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            Resume();
-        }
-        else
-        {
-            Pause();
+            if (GameIsMap)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
     }
     void Resume()
     {
         mapMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsMap = false;
+         Time.timeScale = 1f;
+         GameIsMap = false;
     }
 
     void Pause()
