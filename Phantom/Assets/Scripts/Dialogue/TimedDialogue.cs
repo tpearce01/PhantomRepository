@@ -48,6 +48,7 @@ public class TimedDialogue : MonoBehaviour {
                 //return Color.red;
                 return ConvertColor(124,95,149);
             }
+        
             else {
 
                 Debug.Log("No valid color");
