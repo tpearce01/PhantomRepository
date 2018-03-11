@@ -52,7 +52,8 @@ public static class PlayerInventory {
 	static void CreateFile() {
         if (!File.Exists(Application.persistentDataPath + "/PlayerInventory.txt")) {
             StreamWriter sr = File.CreateText(Application.persistentDataPath + "/PlayerInventory.txt");
-            sr.WriteLine(GetData());
+            //sr.WriteLine(GetData());
+			sr.WriteLine("Sample Item");
             sr.Close();
         }
     }
