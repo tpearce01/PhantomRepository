@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &761656434
+--- !u!1001 &1336191096
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -304,7 +304,7 @@ Prefab:
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.size
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
       propertyPath: m_LocalPosition.x
@@ -341,202 +341,201 @@ Prefab:
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[0].name
-      value: Veronica
+      value: Brian
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[0].text
-      value: Tell me why we're going again?
+      value: Hey! It took you all long enough.
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[0].timeToDisplay
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[1].name
-      value: Robbie
+      value: Veronica
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[1].text
-      value: It's his birthday.
+      value: Hey, Brian...
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[1].timeToDisplay
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[2].name
-      value: Veronica
+      value: Robbie
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[2].text
-      value: I know that. I mean, why here?
+      value: You know we gotta be fashionably late.
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[2].timeToDisplay
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[3].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[3].text
-      value: Well you know he's always been like this, looking for adventure and whatnot.
-        And he's been dying for weeks to check out this park.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[3].timeToDisplay
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[4].name
-      value: Veronica
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[4].text
-      value: Great. So we're going to an abandoned park for his birthday because he
-        wants to see some broken buildings.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[4].timeToDisplay
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[5].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[5].text
-      value: You can't forget about the ghosts.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[5].timeToDisplay
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[6].name
-      value: Veronica
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[6].text
-      value: Right...the ghosts. Wait, aren't there security guards?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[6].timeToDisplay
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[7].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[7].text
-      value: Brian said he had that covered. Apparently he scoped it out last week.
-        One security guard roams the premises but only around the perimeter.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[7].timeToDisplay
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[8].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[8].text
-      value: People are able to sneak in and out all the time so we should be ok once
-        we actually get inside. There's no surveillance cameras either.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[8].timeToDisplay
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[9].name
-      value: Veronica
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[9].text
-      value: I still think this is stupid.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[9].timeToDisplay
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[10].name
-      value: Veronica
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[10].text
-      value: So how much longer is it 'til we're there?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[10].timeToDisplay
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[11].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[11].text
-      value: Almost. It's only about two more miles. Hey Chris, you ok? You haven't
-        really said anything this whole time.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[11].timeToDisplay
-      value: 54
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[12].name
       value: Christopher
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
+      propertyPath: conversation.Array.data[3].text
+      value: Sorry. But also, where're the others?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[3].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[4].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[4].text
+      value: You mean Yvette and Caroline? They left a bit ago to get more drinks
+        from the car.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[4].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[5].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[5].text
+      value: In the meantime, go ahead and take a load off. Then I got a surprise
+        for everyone.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[5].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[6].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[6].text
+      value: We're going the whole nine yards aren't we? If this is going to be anything
+        like our 'adventure' in the cove I'm out.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[6].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[7].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[7].text
+      value: That was just a slight mishap. Besides, no one got hurt. No harm, no
+        foul.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[7].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[8].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[8].text
+      value: We're baaack!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[8].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[9].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[9].text
+      value: Yvette, quiet down. We'll get cau-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[9].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[10].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[10].text
+      value: Ah! Everyone is here!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[10].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[11].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[11].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[11].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[12].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
       propertyPath: conversation.Array.data[12].text
-      value: Uh, I'm fine. It's just...I'm not really into this whole idea.
+      value: Ohhh, how's my little brother doing~?
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[12].timeToDisplay
-      value: 58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
@@ -546,133 +545,921 @@ Prefab:
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[13].text
-      value: You mean the curse?
+      value: Oh geez, how much did you drink?
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[13].timeToDisplay
-      value: 62
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[14].name
-      value: Christopher
+      value: Veronica
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[14].text
-      value: '...'
+      value: Yea...I can smell the alcohol from here.
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[14].timeToDisplay
-      value: 66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[15].name
-      value: Veronica
+      value: Yvette
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[15].text
-      value: Oooh. Are you telling me you're scared?
+      value: 'Shut it, girl. '
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[15].timeToDisplay
-      value: 70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[16].name
-      value: Christopher
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[16].text
-      value: Maybe just a little
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[16].timeToDisplay
-      value: 74
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[17].name
-      value: Robbie
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[17].text
-      value: It's all just hoaxes and stories. I don't think anything's going to happen.
-        We should be fine.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[17].timeToDisplay
-      value: 78
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[18].name
-      value: Christopher
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[18].text
-      value: Yeah...just fine...
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[18].timeToDisplay
-      value: 82
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[19].name
-      value: Christopher
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[19].text
-      value: Hey...did you guys see that?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[19].timeToDisplay
-      value: 92
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
-        type: 2}
-      propertyPath: conversation.Array.data[20].name
       value: Veronica
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
-      propertyPath: conversation.Array.data[20].text
-      value: What?
+      propertyPath: conversation.Array.data[16].text
+      value: O-Oh...
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
-      propertyPath: conversation.Array.data[20].timeToDisplay
-      value: 96
+      propertyPath: conversation.Array.data[16].timeToDisplay
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
-      propertyPath: conversation.Array.data[21].name
+      propertyPath: conversation.Array.data[17].name
       value: Christopher
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
+      propertyPath: conversation.Array.data[17].text
+      value: '...Whose idea was it to send a drunk girl to pick up more alcohol?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[17].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[18].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[18].text
+      value: I'm NOT drunk! Just happily buzzed.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[18].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[19].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[19].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[19].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[20].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[20].text
+      value: '...What? You doubt me or something?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[20].timeToDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[21].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
       propertyPath: conversation.Array.data[21].text
-      value: Nothing...nevermind.
+      value: You know Yvette. With her tolerance, it'll take a LOT to get her wasted.
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: conversation.Array.data[21].timeToDisplay
-      value: 100
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[22].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[22].text
+      value: Ugh...true...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[23].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[23].text
+      value: To answer your question, Christopher, Caroline wanted the two of them
+        to pick up the drinks.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[24].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[24].text
+      value: Caroline?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[25].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[25].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[26].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[26].text
+      value: We needed two people to pick up all the drinks, and I'd rather Yvette
+        not leave my sights.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[27].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[27].text
+      value: Heh. You're lucky to have a friend like Caroline, sis.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[28].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[28].text
+      value: Right?! She's too good to me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[29].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[29].text
+      value: Alright, alright! Settle down guys.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[30].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[30].text
+      value: Now that the gang's all here, we can finally get this party started!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[31].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[31].text
+      value: Everyone, grab a cup. Let's start things off with a toast!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[32].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[32].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[33].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[33].text
+      value: Here, Veronica.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[34].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[34].text
+      value: O-Oh...Actually, I-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[35].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[35].text
+      value: What, can't even handle a single drink, girl?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[36].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[36].text
+      value: Huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[37].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[37].text
+      value: C'mon Yvette. Don't be mean to her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[38].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[38].text
+      value: No, wait. Give it to me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[39].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[39].text
+      value: You sure?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[40].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[40].text
+      value: Yes. Gimme.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[41].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[41].text
+      value: If you say so...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[42].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[42].text
+      value: Everyone ready? Alright, Cheers!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[43].name
+      value: All
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[43].text
+      value: Cheers!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[44].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[44].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[45].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[45].text
+      value: Hmm? You're not going to drink?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[46].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[46].text
+      value: Nah, I don't think so. Not a fan of alcohol, honestly.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[47].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[47].text
+      value: Well, neither is Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[48].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[48].text
+      value: UGH--JESUS, THIS IS HORRIBLE.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[49].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[49].text
+      value: Haha, she's twitching! God, where's my phone?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[50].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[50].text
+      value: '...Yea, I think I''m good.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[51].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[51].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[52].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[52].text
+      value: Usually, people put their cup to their lips to drink something instead
+        of just staring at it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[53].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[53].text
+      value: You know, you don't HAVE to drink
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[54].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[54].text
+      value: Gulp!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[55].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[55].text
+      value: Aaaand, there she goes...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[56].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[56].text
+      value: BLECH! Cough, cough-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[57].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[57].text
+      value: What made you think the second drink would be any different from the
+        first?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[58].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[58].text
+      value: Shhhh, she's trying...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[59].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[59].text
+      value: Oh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[60].name
+      value: Caroline
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[60].text
+      value: Hmm?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[61].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[61].text
+      value: What's up?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[62].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[62].text
+      value: I completely forgot. I bought a ouija board
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[63].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[63].text
+      value: '*cough* S-Seriously, Brian..?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[64].name
+      value: Yvette
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[64].text
+      value: Oh, at least he keeps things interesting.... unlike you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[65].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[65].text
+      value: 'But... a ouija board? It''s completely illogical. The only time it''s
+        intersting is in movies.       '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[66].name
+      value: Brian
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[66].text
+      value: "C\u2019mon Veronica, lighten up and give it a shot!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[67].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[67].text
+      value: Ehh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[68].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[68].text
+      value: Not your thing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[69].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[69].text
+      value: "Yea. I\u2019m also feeling a bit lightheaded, it\u2019ll be hard for
+        me to get into it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[70].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[70].text
+      value: "That\u2019s fine. Do you maybe want to walk around a bit for some fresh
+        air?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[71].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[71].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[72].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[72].text
+      value: "That sounds like a good idea. It\u2019d clear your head."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[73].name
+      value: Veronica
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[73].text
+      value: "True\u2026 Okay, we can do a little exploring while the others have
+        their fun in here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[74].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[74].text
+      value: "Sounds good. I\u2019ll let them know."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[75].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[75].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[76].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[76].text
+      value: Hey, Chris?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[77].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[77].text
+      value: Hmm? What's wrong?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[78].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[78].text
+      value: Actually, uhh.. Think you can do me a solid and sit this one out?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[79].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[79].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[80].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[80].text
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[81].name
+      value: Christopher
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[81].text
+      value: '... I never knew you liked Veronica.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[82].name
+      value: Robbie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[82].text
+      value: Pfff, haha! Dang, you got me quick. But, yea. I'd like to have a private
+        talk with her
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[83].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[83].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[84].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[84].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[85].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[85].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[86].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[86].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[87].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[87].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[88].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[88].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[89].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[89].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[90].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[90].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[91].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[91].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[92].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[92].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[93].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[93].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[94].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[94].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[95].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[95].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[96].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[96].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[97].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[97].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[98].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[98].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[99].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: conversation.Array.data[99].text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
