@@ -475,7 +475,7 @@ MonoBehaviour:
   - name: Robbie
     text: Take this. I've got another one.
     timeToDisplay: 25
-  - name: 
+  - name: Tutorial
     text: '[Press ''M'' to open map]'
     timeToDisplay: 30
   - name: Veronica
