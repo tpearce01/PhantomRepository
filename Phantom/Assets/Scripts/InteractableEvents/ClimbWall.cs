@@ -31,10 +31,6 @@ public class ClimbWall : Interactable {
 		wallCollider.enabled = false;
 		for (int i = 0; i < points.Length; i++) {
 			Vector3 startLocation = player.transform.position;
-			/*for (int j = 0; j < loops; j++) {
-				player.transform.position = Vector3.MoveTowards (startLocation, new Vector3(points [i].destination.x, points [i].destination.y, player.transform.position.z), Time.fixedDeltaTime/ (j*points [i].timeToDestination) );
-				yield return new WaitForFixedUpdate();
-			}*/
 			while (Mathf.Abs(Vector2.Distance ((Vector2)player.transform.position, points [i].destination)) > 0.1f) {
 				player.transform.position = Vector3.MoveTowards (player.transform.position, new Vector3(points [i].destination.x, points [i].destination.y, player.transform.position.z), 0.01f * points[i].speed);
 				yield return new WaitForFixedUpdate ();
