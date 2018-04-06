@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26d12775b2bc415a8c42dda784dced4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToBegin: 46
+  timeToBegin: 48
   timeBetweenSwap: 4
   chatBubbles:
   - {fileID: 1564225994}
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26d12775b2bc415a8c42dda784dced4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToBegin: 88
+  timeToBegin: 92
   timeBetweenSwap: 4
   chatBubbles:
   - {fileID: 364402320}
@@ -439,6 +439,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114512285778729664, guid: 0148a36483a745a4ca49c4c1145f4a72,
+        type: 2}
+      propertyPath: timeModifier
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0148a36483a745a4ca49c4c1145f4a72, type: 2}
   m_IsPrefabParent: 0
@@ -480,6 +485,11 @@ Prefab:
     - target: {fileID: 4050474865999482, guid: 093ed9aeba221944eaed9decf587bfaf, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760687270594226, guid: 093ed9aeba221944eaed9decf587bfaf,
+        type: 2}
+      propertyPath: timeToLoad
+      value: 108
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 093ed9aeba221944eaed9decf587bfaf, type: 2}
@@ -568,6 +578,34 @@ Prefab:
     - target: {fileID: 1906480990241850, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
       propertyPath: m_Name
       value: TimedDialogue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: timeBetweenText
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: dialogue
+      value: "Veronica: Tell me why we're going again?\r\nRobbie: It's his birthday.\r\nVeronica:
+        I know that. I mean, why here?\r\nRobbie: Well you know he's always been like
+        this, looking for adventure and whatnot. And he's been dying for weeks to
+        check out this park.\r\nVeronica: Great. So we're going to an abandoned park
+        for his birthday because he wants to see some broken buildings.\r\nRobbie:
+        You can't forget about the ghosts.\r\nVeronica: Right...the ghosts. Wait,
+        aren't there security guards?\r\nRobbie: Brian said he had that covered. Apparently
+        he scoped it out last week. One security guard roams the premises but only
+        around the perimeter. \nRobbie: People are able to sneak in and out all the
+        time so we should be ok once we actually get inside. There's no surveillance
+        cameras either.\r\nVeronica: I still think this is stupid.\n\n\n\n\nVeronica:
+        So how much longer is it 'til we're there?\r\nRobbie: Almost. It's only about
+        two more miles. Hey Chris, you ok? You haven't really said anything this whole
+        time.\r\nChristopher: Uh, I'm fine. It's just...I'm not really into this whole
+        idea.\r\nRobbie: You mean the curse?\r\nChristopher: ...\r\nVeronica: Oooh.
+        Are you telling me you're scared?\r\nChristopher: Maybe just a little.\r\nRobbie:
+        It's all just hoaxes and stories. I don't think anything's going to happen.
+        We should be fine.\r\nChristopher: Yeah...just fine...\n\n\n\n\nChristopher:
+        Hey...did you guys see that?\r\nVeronica: What?\r\nChristopher: Nothing...nevermind."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
@@ -899,6 +937,11 @@ Prefab:
     - target: {fileID: 4129192264602484, guid: c8bbb11113399ad4ca94cc5508dd17bd, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687374855986560, guid: c8bbb11113399ad4ca94cc5508dd17bd,
+        type: 2}
+      propertyPath: showAtTime
+      value: 92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8bbb11113399ad4ca94cc5508dd17bd, type: 2}
