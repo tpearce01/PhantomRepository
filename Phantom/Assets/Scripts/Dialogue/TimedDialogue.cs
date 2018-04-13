@@ -1,15 +1,34 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimedDialogue : MonoBehaviour {
-
+    [SerializeField] float timeBetweenText;
 	[SerializeField] GameObject textObjPrefab;
 	[SerializeField] GameObject dialogueUI;
-	[SerializeField] Dialogue[] conversation;
-	int currentIndex = 0;
+    [TextArea(3,10)]
+    public string dialogue;
+
+    List<Dialogue> conversation = new List<Dialogue>();
+    int currentIndex = 0;
 	float timer = 0;
+
+    void Awake() {
+        ParseDialogue();
+    }
+
+    public void ParseDialogue() {
+        string[] dialogueData = dialogue.Split(new string[] { Environment.NewLine, ":", "\n"}, System.StringSplitOptions.None);
+        Debug.Log("Length: " + dialogueData.Length);
+        for (int i = 0; i < dialogueData.Length; i += 2) {
+            Dialogue temp = new Dialogue();
+            temp.name = dialogueData[i];
+            temp.text = dialogueData[i + 1];
+            conversation.Add(temp);
+        }
+    }
 
 	public void TriggerDialogue(){
 		dialogueUI.SetActive (true);
@@ -32,47 +51,23 @@ public class TimedDialogue : MonoBehaviour {
 	class Dialogue{
 		public string name;
 		public string text;
-		public float timeToDisplay;
     
 		public Color GetNameColor(){
             Debug.Log("Setting name color: " + name);
-            if (name == "Veronica")
-            {
+            if (name.ToLower() == "veronica") {
                 //return Color.blue;
-                return ConvertColor(83, 126, 162);
+                return ConvertColor(83,126,162);
             }
-            else if (name == "Robbie")
-            {
-                //return Color.green;
-                return ConvertColor(97, 160, 112);
-            }
-            else if (name == "Christopher")
-            {
-                //return Color.purple;
-                return ConvertColor(124, 95, 149);
-            }
-            else if (name == "Tutorial")
-            {
-                //return Color.grey;
-                return ConvertColor(169, 169, 169);
-            }
-            else if (name == "Yvette")
-            {
-                //return Color.pink;
-                return ConvertColor(255,192,203);
-            }
-            else if (name == "Caroline")
-            {
-                //return Color.yellow;
-                return ConvertColor(255,255,0);
-            }
-            else if (name == "Brian")
-            {
+            else if (name.ToLower() == "robbie") {
                 //return Color.red;
-                return ConvertColor(240, 0, 0);
+                return ConvertColor(97,160,112);
             }
-            else
-            {
+            else if (name.ToLower() == "christopher") {
+                //return Color.red;
+                return ConvertColor(124,95,149);
+            }
+        
+            else {
 
                 Debug.Log("No valid color");
                 return Color.white;
@@ -88,9 +83,10 @@ public class TimedDialogue : MonoBehaviour {
 
 	void FixedUpdate(){
 		timer += Time.fixedDeltaTime;
-		if (currentIndex < conversation.Length && timer >= conversation[currentIndex].timeToDisplay) {
+		if (currentIndex < conversation.Count && timer >= timeBetweenText) {
 			Debug.Log ("Next");
 			Next ();
+            timer = 0;
 		}
 	}
 

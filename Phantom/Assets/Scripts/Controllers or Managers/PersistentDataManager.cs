@@ -6,6 +6,8 @@ using System.Text;
 using System;
 
 public static class PersistentDataManager {
+	public static string dialogue;
+
 	/// <summary>
 	/// Creates a data file if one does not already exist
 	/// </summary>
@@ -13,7 +15,7 @@ public static class PersistentDataManager {
 		if (!File.Exists(Application.persistentDataPath + "/PlayerData.txt"))
 		{
 			StreamWriter sr = File.CreateText(Application.persistentDataPath + "/PlayerData.txt");
-			sr.WriteLine(GetData());
+			sr.WriteLine("00000000000000000000");
 			sr.Close();
 		}
 	}
@@ -38,7 +40,9 @@ public static class PersistentDataManager {
 		string[] splitData = rawData.Split(',');
 		reader.Close();
 
-		//!! Save data to game manager here !!
+		//!! Save data to game variables here !!
+		dialogue = splitData[0];
+
 	}
 
 	/// <summary>
@@ -49,11 +53,27 @@ public static class PersistentDataManager {
 
 		string toReturn = "";
 
-		//!! Append data here !!
-
+		//SAVE DIALOGUE CHOICES
+		toReturn += dialogue;
 		Debug.Log ("GetData(): " + toReturn);
 
 		return toReturn;
+	}
+
+	public static void SetData(int index, char data){
+		char[] temp = dialogue.ToCharArray();
+		temp [index] = data;
+		dialogue = CtoS(temp);
+		SaveData ();
+	}
+
+	public static string CtoS(char[] ca){
+		string data = "";
+		foreach (char c in ca) {
+			data += c;
+		}
+
+		return data;
 	}
 }
 

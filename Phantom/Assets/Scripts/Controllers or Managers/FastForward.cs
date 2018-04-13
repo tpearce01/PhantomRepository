@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FastForward : MonoBehaviour {
-	
+
+    public float timeModifier;
+
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            Time.timeScale = 6.0f;
+            Time.timeScale = timeModifier;
             Debug.Log("Time Scale: " + Time.timeScale);
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
