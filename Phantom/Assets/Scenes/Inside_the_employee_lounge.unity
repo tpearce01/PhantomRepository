@@ -113,241 +113,123 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &112280293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 112280294}
-  - component: {fileID: 112280297}
-  - component: {fileID: 112280296}
-  - component: {fileID: 112280295}
-  m_Layer: 0
-  m_Name: RedDot.svg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &112280294
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 112280293}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1356144584}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167, y: -169}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &112280295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 112280293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcbac41832795c948ad6d0f7c7c731ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &112280296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 112280293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3e102cf20a23faf42900acf8a50a7a82, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &112280297
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 112280293}
---- !u!1001 &1336191096
+--- !u!1001 &1361965487
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_Pivot.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
+    - target: {fileID: 224923857131524274, guid: f2bd752a741a88d4c9324af927025697,
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114660309795548962, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 59cd96cbd6bf4914faafb45207991be1,
-        type: 3}
-    - target: {fileID: 224457421348667262, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -10
+    - target: {fileID: 4088339273962934, guid: f2bd752a741a88d4c9324af927025697, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
       objectReference: {fileID: 0}
-    - target: {fileID: 224457421348667262, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.000005722
+    - target: {fileID: 4088339273962934, guid: f2bd752a741a88d4c9324af927025697, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.2460985
       objectReference: {fileID: 0}
-    - target: {fileID: 224457421348667262, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 568.9
+    - target: {fileID: 4088339273962934, guid: f2bd752a741a88d4c9324af927025697, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224457421348667262, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 272
+    - target: {fileID: 4088339273962934, guid: f2bd752a741a88d4c9324af927025697, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.7665075
       objectReference: {fileID: 0}
-    - target: {fileID: 114660309795548962, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114660309795548962, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114660309795548962, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626174791032212, guid: f955b00930b82a545a09393b8f384b4a, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224457421348667262, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f955b00930b82a545a09393b8f384b4a, type: 2}
+    m_RemovedComponents:
+    - {fileID: 114929171897747110, guid: f2bd752a741a88d4c9324af927025697, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: f2bd752a741a88d4c9324af927025697, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1356144584 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1336191096}
 --- !u!1 &1742577755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,6 +1477,50 @@ Prefab:
         type: 2}
       propertyPath: conversation.Array.data[99].text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: timeBetweenText
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: dialogue
+      value: "Yvette: \"Hey! It took you all long enough.\"\r\nVeronica: \u201CHey,
+        Yvette\u2026\u201D\r\nRobbie: \"You know we gotta be fashionably late, sis.\"\r\nChristopher:
+        \u201CSorry. But also, where\u2019s the other one?\u201D\r\nBrian: \"You mean
+        Caroline? She left a bit ago to get more drinks from the car.\u201D\r\n\r\n>Caroline
+        appears.\r\n\r\nCaroline: \u201CBack.\u201D\r\nYvette: \u201CSpeak of the
+        devil!\u201D\r\nCaroline: \u201CIs that a new cup in your hand, Yvette? God,
+        you\u2019re probably drunk already.\u201D\r\nYvette: \u201CI\u2019m NOT drunk!
+        Just happily buzzed.\u201D\r\nRobbie: \u201CWell, now that the gang\u2019s
+        all here, we can finally get this party started!\u201D\r\nRobbie: \u201CEveryone,
+        grab a cup. Let\u2019s start things off with a toast!\u201D\r\n\r\n>Sound
+        effect of drinks being poured\r\n\r\nVeronica: \u201C...\u201D\r\nRobbie:
+        \u201CHere, Veronica.\u201D\r\nVeronica: \u201CO-Oh\u2026 Actually, I-\u201D\r\nYvette:
+        \u201CWhat, can\u2019t even handle a single drink, girl?\u201D\r\nVeronica:
+        \u201CHuh?\u201D\r\nRobbie: \u201CC\u2019mon, Yvette. Don\u2019t be mean to
+        her.\u201D\r\nVeronica: \u201CI mean, she\u2019s not wrong. Just the smell
+        of alcohol gives me a headache...\u201D\r\nRobbie: \u201CAre you okay? Do
+        you maybe want to walk around a bit for some fresh air?\u201D\r\nVeronica:
+        \u201C...\u201D\r\nChristopher: \u201CThat sounds like a good idea. It\u2019d
+        clear your head.\u201D\r\nVeronica: \u201CTrue\u2026 Okay, we can do a little
+        exploring while the others have their fun in here.\u201D\r\nRobbie: \u201CSounds
+        good. Alright, Veronica and I will be taking off.\u201D\r\nChristopher: \u201C
+        \u2018Kay. Good luck, man.\u201D\r\nRobbie: \u201CHeh. I\u2019ll do my best!\u201D\r\nVeronica:
+        \u201CHmm?\u201D\r\nRobbie: \u201CC\u2019mon, let\u2019s go.\u201D\r\n\r\n>Robbie
+        and Veronica leave\r\n\r\nYvette: \u201C...\u201D\r\nCaroline: \u201CYvette?
+        Are you okay?\u201D\r\nYvette: \u201CMmmm\u2026 Y-yea, I just feel a little\u2026\u201D\r\nYvette:
+        \u201C...?! H-Huh?!\u201D\r\nCaroline: \u201CHmm? Yvette-?\u201D\r\nYvette:
+        \u201CI\u2026 I see someone..!!\u201D\r\nChristopher: \u201CHuh?\u201D\r\nYvette:
+        \u201CY-You don\u2019t..?\u201D\r\nChristopher: \u201CNo. There\u2019s no
+        one here but us.\u201D\r\nYvette: \u201C...\u201D\r\nYvette: \u201CI\u2019m...
+        gunna step outside. \u201D\r\n\r\n>Yvette Leaves\r\n\r\nCaroline: \u201C...\u201D\r\nCaroline:
+        \u201CI\u2019m gunna go get something for Yvette.\u201D\r\nChristopher: \u201CWant
+        me to come with?\u201D\r\nCaroline: \u201CNo, stay here.\u201D\r\n\r\n>Caroline
+        Leaves\r\n>Clock striking midnight sound\r\n\r\n\r\nChristopher: \u201C...\u201D\r\nChristopher:
+        \u201CNow I\u2019m alone.\u201D\r\nChristopher: \u201C...\u201D\r\n Christopher:
+        \u201CI wonder if there\u2019s anything interesting here\u2026\u201D\r\n\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
