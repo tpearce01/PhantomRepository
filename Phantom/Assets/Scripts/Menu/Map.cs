@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Map : MonoBehaviour
 {
@@ -10,9 +11,6 @@ public class Map : MonoBehaviour
     public GameObject mapMenuUI;
 
     // Update is called once per frame
-
-
-
 
     void Update()
     {
@@ -25,14 +23,15 @@ public class Map : MonoBehaviour
             else
             {
                 Pause();
+                //highlightNode();
             }
         }
     }
     void Resume()
     {
         mapMenuUI.SetActive(false);
-         Time.timeScale = 1f;
-         GameIsMap = false;
+        Time.timeScale = 1f;
+        GameIsMap = false;
     }
 
     void Pause()
@@ -41,6 +40,10 @@ public class Map : MonoBehaviour
         Time.timeScale = 0f;
         GameIsMap = true;
     }
+
+   
+
 }
+
 
 	
