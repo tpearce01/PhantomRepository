@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 224923857131524274}
   - component: {fileID: 222198243941200436}
   - component: {fileID: 114443547304367162}
-  - component: {fileID: 114929171897747110}
   - component: {fileID: 114339757074644234}
   m_Layer: 5
   m_Name: Map
@@ -154,18 +153,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114929171897747110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1387587310700124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59006e249a12924cb3b8f23e6b4671b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapMenuUI: {fileID: 0}
 --- !u!212 &212126474437752684
 SpriteRenderer:
   m_ObjectHideFlags: 1
