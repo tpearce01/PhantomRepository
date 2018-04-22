@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenDoor : Interactable {
+public class OpenDoor_old : Interactable {
     [SerializeField]
     GameObject doorObj;
 

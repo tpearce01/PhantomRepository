@@ -21,7 +21,7 @@ public class EventTriggerObject : MonoBehaviour {
         rangeCollider = gameObject.GetComponent<CircleCollider2D>();
         rangeCollider.radius = range;
 
-        eventTitleText = transform.parent.Find("TextCanvas").gameObject.GetComponentInChildren<Text>();
+        eventTitleText = transform.parent.Find("TextCanvas").Find("EventTitleText").GetComponent<Text>();
         eventTitleText.color = new Color(eventTitleText.color.r, eventTitleText.color.g, eventTitleText.color.b, 0);
 
         fade = Fade.CreateFade(gameObject);
