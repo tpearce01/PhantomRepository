@@ -7,7 +7,8 @@ using UnityEngine;
     MoveObjectEvent
     
     Purpose:
-        Move an object
+        Move an object. Duration seems to vary by up to 25%, so it may be wise to give it some extra time if an event
+        needs to be called immediately after this
      */
 public class MoveObjectEvent : Event {
     public string TargetObjectName;                     // Name of the object to move
@@ -22,6 +23,10 @@ public class MoveObjectEvent : Event {
         // If target is Player, disable player movement
         if (TargetObject.CompareTag("Player")) {
             Player.instance.DisableMovement();
+            GameObject[] companions = GameObject.FindGameObjectsWithTag("Companion");
+            foreach (GameObject cm in companions) {
+                cm.GetComponent<CompanionMovement>().enabled = false;
+            }
             yield return new WaitForFixedUpdate();
         }
 
@@ -29,12 +34,9 @@ public class MoveObjectEvent : Event {
         for (int i = 0; i < arrDestinations.Length; i++) {
             long start = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
             // Continue moving closer until object is within acceptable distance of the target destination
-            float callsPerSec = 1 / Time.fixedDeltaTime;
-            float distanceDelta = (2 / arrDestinations[i].duration) / callsPerSec;
-            Debug.Log("Delta: " + distanceDelta);
             while (Mathf.Abs(Vector2.Distance(TargetObject.transform.position, arrDestinations[i].TargetDestination)) > safeDistance) {
                 // Maintain TargetObject original z position to prevent background objects moving to the foreground
-                TargetObject.transform.position = Vector3.MoveTowards(TargetObject.transform.position, new Vector3(arrDestinations[i].TargetDestination.x, arrDestinations[i].TargetDestination.y, TargetObject.transform.position.z), distanceDelta); 
+                TargetObject.transform.position = Vector3.MoveTowards(TargetObject.transform.position, new Vector3(arrDestinations[i].TargetDestination.x, arrDestinations[i].TargetDestination.y, TargetObject.transform.position.z), arrDestinations[i].speed / 100); 
                 yield return new WaitForFixedUpdate();
             }
             long end = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
@@ -45,6 +47,10 @@ public class MoveObjectEvent : Event {
         // If target is Player, re-enable movement
         if (TargetObject.CompareTag("Player")) {
             Player.instance.EnableMovement();
+            GameObject[] companions = GameObject.FindGameObjectsWithTag("Companion");
+            foreach (GameObject cm in companions) {
+                cm.GetComponent<CompanionMovement>().enabled = true;
+            }
         }
     }
 	
@@ -53,5 +59,5 @@ public class MoveObjectEvent : Event {
 [System.Serializable]
 public class MoveObjectEventParameters {
     public Vector2 TargetDestination;   // Position of destination
-    public float duration;              // Time of movement
+    public float speed;                 // Speed of movement
 }
