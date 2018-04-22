@@ -10,7 +10,6 @@ public class EventTriggerObject : MonoBehaviour {
     public float range;                     // Clickable area & distance to activate
 
     private CircleCollider2D rangeCollider; // Collider to represent range
-    public string eventTitle;               // Text to display on mouseover
     private Text eventTitleText;            // Text object to display
 
     private Color hoverColor = new Color(.5f, 0f, 0f);  // Object is this color on mouseover
@@ -24,8 +23,7 @@ public class EventTriggerObject : MonoBehaviour {
 
         eventTitleText = transform.parent.Find("TextCanvas").gameObject.GetComponentInChildren<Text>();
         eventTitleText.color = new Color(eventTitleText.color.r, eventTitleText.color.g, eventTitleText.color.b, 0);
-        if (eventTitle != string.Empty)
-            eventTitleText.text = eventTitle;
+
         fade = Fade.CreateFade(gameObject);
 
         StartCoroutine(Idle());
