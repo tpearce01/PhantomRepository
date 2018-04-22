@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Player : MonoBehaviour {
 	public static Player instance;
+    public static string targetEvent = "";
 	NavMeshAgent agent;
 
 	void OnEnable(){
