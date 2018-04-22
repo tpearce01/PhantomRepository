@@ -184,7 +184,7 @@ Transform:
   m_LocalScale: {x: 3, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &683961633
 Prefab:
@@ -223,7 +223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4324736953287560, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1333677483071712, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
       propertyPath: m_Name
@@ -242,106 +242,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1333677483071712, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
     type: 2}
   m_PrefabInternal: {fileID: 683961633}
---- !u!1001 &704018448
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224689921437481552, guid: f955b00930b82a545a09393b8f384b4a,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f955b00930b82a545a09393b8f384b4a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &722903458
 Transform:
   m_ObjectHideFlags: 0
@@ -493,7 +393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_Name
@@ -544,7 +444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_Name
@@ -670,7 +570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932373285
 GameObject:
@@ -806,46 +706,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBetweenText: 0
   textObjPrefab: {fileID: 1272742646431362, guid: 73a2eaf6a49ae4680b15214192ed18b7,
     type: 2}
   dialogueUI: {fileID: 722903459}
-  conversation:
-  - name: Veronica
-    text: Where are we supposed to be going?
-    timeToDisplay: 0
-  - name: Robbie
-    text: 'Brian said we would be meeting in the former employee lounges. '
-    timeToDisplay: 7
-  - name: Robbie
-    text: I've got a map right here.
-    timeToDisplay: 14
-  - name: Christopher
-    text: Can I take a look at that?
-    timeToDisplay: 20
-  - name: Robbie
-    text: Take this. I've got another one.
-    timeToDisplay: 25
-  - name: Tutorial
-    text: '[Press ''M'' to open map]'
-    timeToDisplay: 30
-  - name: Veronica
-    text: So how are we going to be getting in?
-    timeToDisplay: 35
-  - name: Christopher
-    text: I hear front doors are a pretty solid bet.
-    timeToDisplay: 41
-  - name: Veronica
-    text: Heck you.
-    timeToDisplay: 47
-  - name: Robbie
-    text: 'The main gates are actually barred off. '
-    timeToDisplay: 52
-  - name: Robbie
-    text: Brian told me there's a spot we can climb over and get in.
-    timeToDisplay: 57
-  - name: Veronica
-    text: '*sigh* Fine, let''s go.'
-    timeToDisplay: 63
+  dialogue: 
 --- !u!114 &1984336748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +838,7 @@ Transform:
   m_Children:
   - {fileID: 1932373286}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094296963
 GameObject:
