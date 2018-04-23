@@ -13,21 +13,39 @@ public static class Inventory {
     public static List<Item> GetInventory() {
         return items;
     }
+    public static string[] GetInventoryString() {
+        List<string> toReturn = new List<string>();
+        foreach (Item i in items) {
+            toReturn.Add(i.itemName);
+        }
+        return toReturn.ToArray();
+    }
 
     /// <summary>
     /// Load data to inventory
     /// </summary>
     /// <param name="data"></param>
-    public static void SetInventory(List<Item> data) {
-        items = data;
+    public static void SetInventory(string[] data) {
+        foreach (string d in data) {
+            switch (d) {
+                case "Rusted Key":
+                    SampleKeyItem newItem = InventoryUIManager.instance.gameObject.AddComponent<SampleKeyItem>();
+                    items.Add(newItem);
+                    break;
+                default:
+                    Debug.Log("Failed to set Inventory Item during Load");
+                    break;
+            }
+        }
     }
 
     /// <summary>
-    /// Add an item to the player's inventory
+    /// Add an item to the player's inventory and Inventory UI
     /// </summary>
     /// <param name="i"></param>
     public static void AddItem(Item i) {
         items.Add(i);
+        InventoryUIManager.instance.AddItem(i);
     }
 
     /// <summary>
@@ -43,6 +61,14 @@ public static class Inventory {
         }
 
         return false;
+    }
+
+    public static void UseItem(string itemName) {
+        foreach (Item i in items) {
+            if (i.itemName == itemName) {
+                i.UseItem();
+            }
+        }
     }
 }
 

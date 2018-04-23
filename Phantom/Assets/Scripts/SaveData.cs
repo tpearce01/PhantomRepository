@@ -35,6 +35,7 @@ public static class SaveData {
         StreamWriter sr = new StreamWriter(Application.persistentDataPath + "/SaveData.txt");
         sr.WriteLine(GetData());
         sr.Close();
+        Debug.Log("Save Data Successful");
     }
 
     /// <summary>
@@ -48,19 +49,21 @@ public static class SaveData {
 
         PlayerData data = JsonUtility.FromJson<PlayerData>(rawData);
         data.Load();
+        Debug.Log("Load Data Successful");
     }
 }
 
 // As new data needs to be added to the save file, add it to this class so it may easily be converted to json format and saved
 // JsonUtility only gathers the public fields, so make sure members are all public
+[System.Serializable]
 public class PlayerData {
-    public List<Item> inventory;
+    public string[] inventory;
     public List<string> oneTimeEventsCompleted;
 
     // This constructor is used to gather the save data
     // When adding a new piece of data to save, make sure to get the data in this constructor
     public PlayerData() {
-        inventory = Inventory.GetInventory();
+        inventory = Inventory.GetInventoryString();
         oneTimeEventsCompleted = SaveData.oneTimeEventsCompleted;
     }
 

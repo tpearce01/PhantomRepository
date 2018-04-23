@@ -8,7 +8,8 @@ public abstract class OneTimeEvent : Event {
     // If this event has already been completed, destroy it on load
     protected virtual void Start() {
         if (SaveData.oneTimeEventsCompleted.Contains(eventID)) {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            DeactivateTrigger();
         }
     }
 
