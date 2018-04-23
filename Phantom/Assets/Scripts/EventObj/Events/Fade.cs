@@ -34,9 +34,10 @@ public class Fade : MonoBehaviour {
     /// <param name="callSource"></param>
     /// <returns></returns>
     public static Fade CreateFade(GameObject a_callSource, float a_fadeDuration) {
-        Fade temp = a_callSource.AddComponent<Fade>();
-        temp.fadeDuration = a_fadeDuration;
-        return temp;
+        Fade toReturn = a_callSource.AddComponent<Fade>();
+        toReturn.fadeDuration = a_fadeDuration;
+        toReturn.Initialize();
+        return toReturn;
     }
 
     /// <summary>
@@ -55,18 +56,35 @@ public class Fade : MonoBehaviour {
         coroutine = StartCoroutine(FadeOutTextCR(target, fadeDuration));
     }
 
-    public void FadeOutSprite(SpriteRenderer target, float duration) {
-        StartCoroutine(FadeOutSpriteCR(target, duration));
+    public void FadeOutSprite(SpriteRenderer target, float a_duration) {
+        StartCoroutine(FadeOutSpriteCR(target, a_duration));
     }
 
-    // Coroutine to fade out
-    IEnumerator FadeOutTextCR(Text target, float a_fadeDuration) {
-        fadeIn = false;
-        if(coroutine != null)
-            StopCoroutine(coroutine);
-        alphaChangePerFrame = 1 / (a_fadeDuration * callsPerSec);
-        //target.color = new Color(target.color.r, target.color.g, target.color.b, 1f);
-        while (target.color.a > 0 && !fadeIn) {
+    public void FadeInImage(Image target, float a_duration) {
+        coroutine = StartCoroutine(FadeInImageCR(target, a_duration));
+    }
+
+    public void FadeOutImage(Image target, float a_duration) {
+        coroutine = StartCoroutine(FadeOutImageCR(target, a_duration));
+    }
+
+    // Coroutine to fade in Image
+    IEnumerator FadeInImageCR(Image target, float a_fadeDuration) {
+        Initialize();
+
+        // Fade In
+        while (target.color.a < 1) {
+            target.color = new Color(target.color.r, target.color.g, target.color.b, target.color.a + alphaChangePerFrame);
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
+    // Coroutine to fade out Image
+    IEnumerator FadeOutImageCR(Image target, float a_fadeDuration) {
+        Initialize();
+
+        // Fade Out
+        while (target.color.a > 0) {
             target.color = new Color(target.color.r, target.color.g, target.color.b, target.color.a - alphaChangePerFrame);
             yield return new WaitForFixedUpdate();
         }
@@ -74,11 +92,12 @@ public class Fade : MonoBehaviour {
 
     // Coroutine to fade in
     IEnumerator FadeInTextCR(Text target, float a_fadeDuration) {
+        Initialize();
         fadeIn = true;
         if (coroutine != null)
             StopCoroutine(coroutine);
-        alphaChangePerFrame = 1 / (a_fadeDuration * callsPerSec);
-        //target.color = new Color(target.color.r, target.color.g, target.color.b, 0f);
+
+        // Fade In
         while (target.color.a < 1 && fadeIn) {
             target.color = new Color(target.color.r, target.color.g, target.color.b, target.color.a + alphaChangePerFrame);
             yield return new WaitForFixedUpdate();
@@ -86,11 +105,12 @@ public class Fade : MonoBehaviour {
 
     }
 
-    IEnumerator FadeOutSpriteCR(SpriteRenderer target, float a_fadeDuration) {
+    // Coroutine to fade out
+    IEnumerator FadeOutTextCR(Text target, float a_fadeDuration) {
         Initialize();
         fadeIn = false;
-        StopCoroutine("FadeInOverlay");
-        alphaChangePerFrame = 1 / (a_fadeDuration * callsPerSec);
+        if(coroutine != null)
+            StopCoroutine(coroutine);
 
         // Fade Out
         while (target.color.a > 0 && !fadeIn) {
@@ -98,4 +118,18 @@ public class Fade : MonoBehaviour {
             yield return new WaitForFixedUpdate();
         }
     }
+
+    // Coroutine to fade out a SpriteRenderer
+    IEnumerator FadeOutSpriteCR(SpriteRenderer target, float a_fadeDuration) {
+        Initialize();
+        fadeIn = false;
+        StopCoroutine("FadeInOverlay");
+
+        // Fade Out
+        while (target.color.a > 0) {
+            target.color = new Color(target.color.r, target.color.g, target.color.b, target.color.a - alphaChangePerFrame);
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
 }
