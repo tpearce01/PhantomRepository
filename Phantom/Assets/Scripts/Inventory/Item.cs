@@ -9,13 +9,13 @@ using UnityEngine;
         1) Implement the following method in your item class, which is run when the item is used: 
                 public override IEnumerator TriggerEvent() { ... }
         2) Import your item's image into the Resources folder in Unity. Give it a relevant and simple name.
-        2) In your item class, create an "Awake" method to initialize the default values:
+        3) In your item class, create an "Awake" method to initialize the default values:
             void Awake() {
                 itemName = "Your Item Name";
                 Texture2D tex = Resources.Load<Texture2D>("YourImageName");
                 image = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0, 0));
             }
-        3) Create a switch statement case in Inventory.cs method SetInventory(...) as demonstrated below:
+        4) Create a switch statement case in Inventory.cs method SetInventory(...) as demonstrated below:
             case "Your Item Name":
                 YourItemClass newItem = InventoryUIManager.instance.gameObject.AddComponent<YourItemClass>();
                 items.Add(newItem);

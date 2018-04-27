@@ -17,22 +17,31 @@ public class InventoryUIManager : MonoBehaviour {
         }
     }*/
 
+    // Only one instance of this should exist to prevent duplicating items to the UI
     void Awake() {
-        instance = this;
-        fade = Fade.CreateFade(gameObject);
-        SaveData.Load();
+        if (instance == null) {
+            instance = this;
+            fade = Fade.CreateFade(gameObject);
+            SaveData.Load();
+        }
+        else {
+            Destroy(this);
+        }
     }
 
+    // Initialize the UI from inventory
     void Start() {
         InitializeItems();
     }
 
+    // Adds all items from the inventory to the UI. This should only be called once per scene to prevent duplicates
     void InitializeItems() {
         foreach (Item i in Inventory.GetInventory()) {
             AddItem(i);
         }
     }
 
+    // Adds an item to the UI
     public void AddItem(Item i) {
         GameObject newItem = Instantiate(uiItemPrefab, transform.Find("BackgroundPanel").Find("ItemSlotPanel"));
         newItem.GetComponent<InventoryUIItem>().itemName = i.itemName;
@@ -43,10 +52,12 @@ public class InventoryUIManager : MonoBehaviour {
         fade.FadeInImage(im, 1);
     }
 
+    // Removes an item from the UI
     public void RemoveItem(string a_itemName) {
         StartCoroutine(RemoveItemCR(a_itemName));
     }
 
+    // Coroutine to Remove an item from the UI
     public IEnumerator RemoveItemCR(string a_itemName) {
         InventoryUIItem[] items = transform.Find("BackgroundPanel").Find("ItemSlotPanel").GetComponentsInChildren<InventoryUIItem>();
 
@@ -70,6 +81,7 @@ public class InventoryUIManager : MonoBehaviour {
         yield break;
     }
 
+    // Coroutine to shrink the width of a RectTransform to 0
     public IEnumerator ShrinkWidthCR(RectTransform rt, float a_duration) {
         float callsPerSec = 1 / Time.fixedDeltaTime;
         float reductionSize = rt.sizeDelta.x / (a_duration * callsPerSec);
