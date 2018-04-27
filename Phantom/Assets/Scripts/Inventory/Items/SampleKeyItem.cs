@@ -12,7 +12,6 @@ public class SampleKeyItem : Item {
 
     public override IEnumerator TriggerEvent() {
         // Event Code Goes Here
-        //InventoryUIManager.instance.RemoveItem(itemName); // TESTING ONLY - Actually want to keep the key so the door can be used again
         yield break;
     }
 }
