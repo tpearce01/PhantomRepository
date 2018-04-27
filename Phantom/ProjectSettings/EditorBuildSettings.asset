@@ -12,8 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/default_scene.unity
     guid: e966a3cc6c74ba44c82b17dece96b445
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/HauntedHouse.unity
     guid: d94ba3d7458026c4591313e3696fa03c
   - enabled: 1
     path: Assets/Scenes/Hut.unity
     guid: dab81797940a766469e11140c6d896c8
+=======
+    path: Assets/Scenes/driving_to_the_park.unity
+    guid: 5da2556cca9e46c4e84493bea267f60e
+  - enabled: 1
+    path: Assets/Scenes/InsidetheEmployeeLounge.unity
+    guid: adc4146c91dc50b47bfa4bc3eeaff9b7
+>>>>>>> master

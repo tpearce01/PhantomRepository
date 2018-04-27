@@ -4,16 +4,16 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
-public static class PlayerInventory {
+public static class PlayerInventory_old {
 
-    public static List<Item> items = new List<Item>();
+    public static List<Item_old> items = new List<Item_old>();
 
-    public static void AddItem(Item i) {
+    public static void AddItem(Item_old i) {
         items.Add(i);
         //Update UI
     }
 
-    public static Item GetItem(int i) {
+    public static Item_old GetItem(int i) {
         return items[i];
     }
 
@@ -30,9 +30,9 @@ public static class PlayerInventory {
         reader.Close();
 
         //!! Save data to game manager here !!
-        List<Item> tempList = new List<Item>();
+        List<Item_old> tempList = new List<Item_old>();
         for (int i = 0; i < splitData.Length; i++) {
-            tempList.Add(ItemInfo.instance.GetItem(splitData[i]));
+            tempList.Add(ItemInfo_old.instance.GetItem(splitData[i]));
         }
         items = tempList;
         Debug.Log("Load Successful.");
