@@ -290,30 +290,6 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 95043237}
-    - target: {fileID: 1330771419215126, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 195861678284445976, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54505710368350884, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
-        type: 2}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54505710368350884, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
-        type: 2}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50418252982635322, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
-        type: 2}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
   m_IsPrefabParent: 0
