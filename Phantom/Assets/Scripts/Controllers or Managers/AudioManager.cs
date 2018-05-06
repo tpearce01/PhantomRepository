@@ -42,13 +42,13 @@ public class AudioManager : MonoBehaviour {
 	}
 
     // TESTING ONLY
-    void Start() {
-        AudioManager.instance.PlaySoundLoop(Sound.AmbientWind);
-        AudioManager.instance.PlaySoundLoop(Sound.CurseVoice);
-        AudioManager.instance.PlaySoundLoop(Sound.FireCraclking);
-        AudioManager.instance.EndSoundFade(Sound.FireCraclking, 3);
-        AudioManager.instance.EndAllSoundsFade(3);
-    }
+    //void Start() {
+    //    AudioManager.instance.PlaySoundLoop(Sound.AmbientWind);
+    //    AudioManager.instance.PlaySoundLoop(Sound.CurseVoice);
+    //    AudioManager.instance.PlaySoundLoop(Sound.FireCraclking);
+    //    AudioManager.instance.EndSoundFade(Sound.FireCraclking, 3);
+    //    AudioManager.instance.EndAllSoundsFade(3);
+    //}
 
 	void Update(){
 		Cleanup ();
