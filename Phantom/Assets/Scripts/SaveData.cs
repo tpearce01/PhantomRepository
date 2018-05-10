@@ -30,6 +30,12 @@ public static class SaveData {
     /// <summary>
     /// Save data to file
     /// </summary>
+    public static void AutoSave() {
+        if (Config.AutoSave) {
+            Save();
+        }
+    }
+
     public static void Save() {
         CreateFile();
         StreamWriter sr = new StreamWriter(Application.persistentDataPath + "/SaveData.txt");

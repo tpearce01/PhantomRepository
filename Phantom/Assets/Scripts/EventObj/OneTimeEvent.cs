@@ -16,7 +16,7 @@ public abstract class OneTimeEvent : Event {
     // Must be manually called to notify the save system once the event has been completed
     protected void Completed() {
         SaveData.oneTimeEventsCompleted.Add(eventID);
-        SaveData.Save();
+        SaveData.AutoSave();
     }
 
     // Effectively disables this event. EventTriggerObject needs to remain active to fade out EventTitleText, so trigger components
