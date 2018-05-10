@@ -5,7 +5,7 @@ using UnityEngine;
 
 /*
     MoveObjectEvent
-    
+
     Purpose:
         Move an object. Duration seems to vary by up to 25%, so it may be wise to give it some extra time if an event
         needs to be called immediately after this
@@ -17,7 +17,7 @@ public class MoveObjectEvent : Event {
     public MoveObjectEventParameters[] arrDestinations; // Array of positions to navigate to
 
     public override IEnumerator TriggerEvent() {
-        
+
         TargetObject = GameObject.Find(TargetObjectName);   // Find the target object based on name. Inefficient, but it's easy to implement
 
         // If target is Player, disable player movement
@@ -36,7 +36,7 @@ public class MoveObjectEvent : Event {
             // Continue moving closer until object is within acceptable distance of the target destination
             while (Mathf.Abs(Vector2.Distance(TargetObject.transform.position, arrDestinations[i].TargetDestination)) > safeDistance) {
                 // Maintain TargetObject original z position to prevent background objects moving to the foreground
-                TargetObject.transform.position = Vector3.MoveTowards(TargetObject.transform.position, new Vector3(arrDestinations[i].TargetDestination.x, arrDestinations[i].TargetDestination.y, TargetObject.transform.position.z), arrDestinations[i].speed / 100); 
+                TargetObject.transform.position = Vector3.MoveTowards(TargetObject.transform.position, new Vector3(arrDestinations[i].TargetDestination.x, arrDestinations[i].TargetDestination.y, TargetObject.transform.position.z), arrDestinations[i].speed / 100);
                 yield return new WaitForFixedUpdate();
             }
             long end = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
@@ -53,7 +53,7 @@ public class MoveObjectEvent : Event {
             }
         }
     }
-	
+
 }
 
 [System.Serializable]
