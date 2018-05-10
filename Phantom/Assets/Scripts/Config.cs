@@ -4,4 +4,5 @@ using UnityEngine;
 
 public static class Config {
     public const bool AutoSave = false;
+    public const bool ClearSaveDataOnStart = true;
 }

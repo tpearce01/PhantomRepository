@@ -22,7 +22,7 @@ public class InventoryUIManager : MonoBehaviour {
         if (instance == null) {
             instance = this;
             fade = Fade.CreateFade(gameObject);
-            SaveData.Load();
+            //SaveData.Load();  This will be done by the GameManager
         }
         else {
             Destroy(this);
