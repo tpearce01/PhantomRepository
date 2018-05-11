@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using System.Security.Cryptography;
+using System;
 
 public static class SaveData {
     public static List<string> oneTimeEventsCompleted = new List<string>();
@@ -30,6 +31,12 @@ public static class SaveData {
     /// <summary>
     /// Save data to file
     /// </summary>
+    public static void AutoSave() {
+        if (Config.AutoSave) {
+            Save();
+        }
+    }
+
     public static void Save() {
         CreateFile();
         StreamWriter sr = new StreamWriter(Application.persistentDataPath + "/SaveData.txt");
@@ -42,14 +49,36 @@ public static class SaveData {
     /// Load data from file
     /// </summary>
     public static void Load() {
-        CreateFile();
-        StreamReader reader = new StreamReader(Application.persistentDataPath + "/SaveData.txt", Encoding.Default);
-        string rawData = reader.ReadToEnd();
-        reader.Close();
+        try {
+            CreateFile();
+            StreamReader reader = new StreamReader(Application.persistentDataPath + "/SaveData.txt", Encoding.Default);
+            string rawData = reader.ReadToEnd();
+            reader.Close();
 
-        PlayerData data = JsonUtility.FromJson<PlayerData>(rawData);
-        data.Load();
-        Debug.Log("Load Data Successful");
+            PlayerData data = JsonUtility.FromJson<PlayerData>(rawData);
+            data.Load();
+            Debug.Log("Load Data Successful");
+        }
+        catch(Exception e) {
+            Debug.Log("Failed to load data. Your file may be corrupt.");
+        }
+        
+    }
+
+    /// <summary>
+    /// Deletes the SaveData.txt file if it exists
+    /// </summary>
+    public static void DeleteData() {
+        string filePath = Application.persistentDataPath + "/SaveData.txt";
+        if (File.Exists(filePath)) {
+            File.Delete(filePath);
+
+            #if UNITY_EDITOR
+            UnityEditor.AssetDatabase.Refresh();
+            #endif
+
+            Debug.Log("SaveData.txt Deleted");
+        }
     }
 }
 
