@@ -384,8 +384,8 @@ GameObject:
   - component: {fileID: 338723105}
   - component: {fileID: 338723104}
   m_Layer: 0
-  m_Name: Plane2 (3)
-  m_TagString: Untagged
+  m_Name: LadderOpening
+  m_TagString: ColliderOpening
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -760,7 +760,7 @@ Prefab:
         type: 2}
       propertyPath: eventToTrigger.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1400937385}
     - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
         type: 2}
       propertyPath: eventToTrigger.Array.data[0]
@@ -803,6 +803,18 @@ MonoBehaviour:
   arrDestinations:
   - TargetDestination: {x: -2.5, y: 2}
     speed: 5
+--- !u!114 &1400937385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400937383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c061c191a07d94b94874ec4ccf7af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColliderName: LadderOpening
 --- !u!1 &1459686897
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +946,7 @@ GameObject:
   - component: {fileID: 2048473845}
   - component: {fileID: 2048473844}
   m_Layer: 0
-  m_Name: Plane2 (4)
+  m_Name: LadderOpening2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
