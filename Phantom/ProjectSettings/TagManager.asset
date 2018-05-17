@@ -7,6 +7,7 @@ TagManager:
   - Companion
   - ColliderOpening
   - PlayerCollider
+  - Dialogue
   layers:
   - Default
   - TransparentFX
