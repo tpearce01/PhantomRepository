@@ -129,6 +129,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e457144093b02458ce7e4ce926e2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &165430014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165430010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2620a46745f730447b8f015923e0aa59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &465265985
 Prefab:
   m_ObjectHideFlags: 0
@@ -465,7 +476,7 @@ Prefab:
         type: 2}
       propertyPath: eventToTrigger.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 165430014}
     - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
         type: 2}
       propertyPath: eventToTrigger.Array.data[0]
@@ -706,6 +717,97 @@ Transform:
   m_Father: {fileID: 1273897298}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1486555120
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627504165732138, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906480990241850, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_Name
+      value: TimedDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: timeBetweenText
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: dialogue
+      value: "Veronica: Tell me why we're going again?\r\nRobbie: It's his birthday.\r\nVeronica:
+        I know that. I mean, why here?\r\nRobbie: Well you know he's always been like
+        this, looking for adventure and whatnot. And he's been dying for weeks to
+        check out this park.\r\nVeronica: Great. So we're going to an abandoned park
+        for his birthday because he wants to see some broken buildings.\r\nRobbie:
+        You can't forget about the ghosts.\r\nVeronica: Right...the ghosts. Wait,
+        aren't there security guards?\r\nRobbie: Brian said he had that covered. Apparently
+        he scoped it out last week. One security guard roams the premises but only
+        around the perimeter. \nRobbie: People are able to sneak in and out all the
+        time so we should be ok once we actually get inside. There's no surveillance
+        cameras either.\r\nVeronica: I still think this is stupid.\n\n\n\n\nVeronica:
+        So how much longer is it 'til we're there?\r\nRobbie: Almost. It's only about
+        two more miles. Hey Chris, you ok? You haven't really said anything this whole
+        time.\r\nChristopher: Uh, I'm fine. It's just...I'm not really into this whole
+        idea.\r\nRobbie: You mean the curse?\r\nChristopher: ...\r\nVeronica: Oooh.
+        Are you telling me you're scared?\r\nChristopher: Maybe just a little.\r\nRobbie:
+        It's all just hoaxes and stories. I don't think anything's going to happen.
+        We should be fine.\r\nChristopher: Yeah...just fine...\n\n\n\n\nChristopher:
+        Hey...did you guys see that?\r\nVeronica: What?\r\nChristopher: Nothing...nevermind."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1906480990241850, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423793755524078, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_TagString
+      value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423793755524078, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1543687148
 GameObject:
   m_ObjectHideFlags: 0

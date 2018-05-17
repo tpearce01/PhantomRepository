@@ -650,6 +650,87 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338723102}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &537510786
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: eventToTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963602821182852, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 212130215349562982, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 212130215349562982, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482858872285228, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: m_Text
+      value: Exit Mansion
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: eventToTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 1554273339}
+    - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: eventToTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 1554273339}
+    - target: {fileID: 114275278228479266, guid: 8f111096e050b494085a82bb1d7ba0f7,
+        type: 2}
+      propertyPath: range
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518040424730290, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+      propertyPath: m_Name
+      value: EventTemplate(ExitMansion)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &676521484
 Prefab:
   m_ObjectHideFlags: 0
@@ -1141,6 +1222,26 @@ Transform:
   m_Father: {fileID: 164059417}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1554273338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518040424730290, guid: 8f111096e050b494085a82bb1d7ba0f7,
+    type: 2}
+  m_PrefabInternal: {fileID: 537510786}
+--- !u!114 &1554273339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554273338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aca14c9768c6f944815882fb06151db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 1
+  delay: 0
+  blackOverlayPrefab: {fileID: 1863323461550406, guid: 8cec31e91ec48414b90a17e918188f71,
+    type: 2}
 --- !u!1 &1568237339 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1518040424730290, guid: 8f111096e050b494085a82bb1d7ba0f7,
