@@ -10,7 +10,7 @@ using UnityEngine;
         Disable collision between two objects
      */
 public class DisableCollider : Event {
-   public override IEnumerator TriggerEvent() {
+    public override IEnumerator TriggerEvent() {
         GameObject Collider = GameObject.FindGameObjectWithTag("ColliderOpening");
         GameObject player = GameObject.Find("Player");
         Physics.IgnoreCollision(Collider.GetComponent<Collider>(), player.GetComponent<Collider>());
