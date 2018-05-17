@@ -113,6 +113,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 924d45559a7992d429568495ba2d4df4, type: 2}
+--- !u!1 &165430010 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518040424730290, guid: 8f111096e050b494085a82bb1d7ba0f7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1128627560}
+--- !u!114 &165430013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165430010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e457144093b02458ce7e4ce926e2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &465265985
 Prefab:
   m_ObjectHideFlags: 0
@@ -454,7 +470,7 @@ Prefab:
         type: 2}
       propertyPath: eventToTrigger.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 165430013}
     - target: {fileID: 114275278228479266, guid: 8f111096e050b494085a82bb1d7ba0f7,
         type: 2}
       propertyPath: range
@@ -462,7 +478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1518040424730290, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
       propertyPath: m_Name
-      value: EventTemplate(MoveToHut)
+      value: EventTemplate(ShowVeronica)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f111096e050b494085a82bb1d7ba0f7, type: 2}
@@ -567,7 +583,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.54
+      value: 14.09
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.y
@@ -620,7 +636,7 @@ Prefab:
     - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_Name
@@ -642,7 +658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalScale.y
@@ -650,6 +666,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54645368339229032, guid: 75fd57556bc2c4d118f2195836dba202,
+        type: 2}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
