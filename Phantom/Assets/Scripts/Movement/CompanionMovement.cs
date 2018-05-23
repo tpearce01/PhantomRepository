@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class CompanionMovement : MonoBehaviour {
 
 	[SerializeField] NavMeshAgent agent;
-	int zLocation = 2;
+	//int zLocation = 2;
 
 	[SerializeField] float walkSpeed;
 	[SerializeField] float runSpeed;

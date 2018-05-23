@@ -33,7 +33,7 @@ public static class SaveData {
     /// </summary>
     public static void AutoSave() {
         if (Config.AutoSave) {
-            Save();
+            Save(); //  Will throw "Unreachable code" warning if Config.AutoSave is set to false
         }
     }
 
@@ -57,10 +57,10 @@ public static class SaveData {
 
             PlayerData data = JsonUtility.FromJson<PlayerData>(rawData);
             data.Load();
-            Debug.Log("Load Data Successful");
+            Debug.Log("Loaded player data.");
         }
         catch(Exception e) {
-            Debug.Log("Failed to load data. Your file may be corrupt.");
+            Debug.Log("Failed to load data: " + e);
         }
         
     }
@@ -77,7 +77,7 @@ public static class SaveData {
             UnityEditor.AssetDatabase.Refresh();
             #endif
 
-            Debug.Log("SaveData.txt Deleted");
+            Debug.Log("Save file deleted.");
         }
     }
 }

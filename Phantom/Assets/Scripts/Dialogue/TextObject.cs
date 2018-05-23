@@ -9,8 +9,14 @@ public class TextObject : MonoBehaviour {
 
 	public float fadeTime = 3.0f;
 
-	void OnEnable(){
-		StartCoroutine (FadeIn());
+	void Start(){
+        Text dialogueText = gameObject.GetComponent<Text>();
+        RectTransform rt = gameObject.GetComponent<RectTransform>();
+
+        dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0f);
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, 0);
+
+        StartCoroutine (FadeIn(dialogueText, rt));
 	}
 
 	void Update () {
@@ -22,7 +28,6 @@ public class TextObject : MonoBehaviour {
 	}
 
 	IEnumerator Fade(){
-		Debug.Log ("Fade");
 		Text dialogueText = gameObject.GetComponent<Text> ();
 		dialogueText.color = new Color (dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 1f);
 		for (int i = 0; i < 50; i++) {
@@ -32,21 +37,17 @@ public class TextObject : MonoBehaviour {
 		Destroy (gameObject);
 	}
 
-	IEnumerator FadeIn(){
-		Text dialogueText = gameObject.GetComponent<Text> ();
-		RectTransform rt = gameObject.GetComponent<RectTransform> ();
+	IEnumerator FadeIn(Text dialogueText, RectTransform rt) {
+        yield return new WaitForEndOfFrame();   // I don't know why, but this seems to fix a rendering bug?
 
-		dialogueText.color = new Color (dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0f);
-		rt.sizeDelta = new Vector2 (rt.sizeDelta.x,0);
-		for (int i = 0; i < 20; i++) {
-			rt.sizeDelta = new Vector2 (rt.sizeDelta.x,rt.sizeDelta.y + 2);
-			yield return new WaitForSeconds(0.01f);
-		}
-			
-		for (int i = 0; i < 50; i++) {
-			dialogueText.color = new Color (dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a + .05f);
+        for (int i = 0; i < 20; i++) {
+            rt.sizeDelta = new Vector2(rt.sizeDelta.x, rt.sizeDelta.y + (dialogueText.preferredHeight / 20));
+            yield return new WaitForSeconds(0.02f);
+        }
+
+        for (int i = 0; i < 50; i++) {
+			dialogueText.color = new Color (dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a + .04f);
 			yield return new WaitForSeconds(0.02f);
 		}
-
-	}
+    }
 }

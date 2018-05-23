@@ -19,9 +19,14 @@ public class TimedDialogue : MonoBehaviour {
         ParseDialogue();
     }
 
+    void Start() {
+        // Required to resolve rendering bug when adding the first TextObject to the dialogue panel
+        GameObject temp = Instantiate(textObjPrefab, gameObject.transform);
+        temp.GetComponent<Text>().text = "";
+    }
+
     public void ParseDialogue() {
         string[] dialogueData = dialogue.Split(new string[] { Environment.NewLine, ":", "\n"}, System.StringSplitOptions.None);
-        Debug.Log("Length: " + dialogueData.Length);
         for (int i = 0; i < dialogueData.Length; i += 2) {
             Dialogue temp = new Dialogue();
             temp.name = dialogueData[i];
@@ -40,7 +45,6 @@ public class TimedDialogue : MonoBehaviour {
 		temp.GetComponent<Text> ().color = conversation [currentIndex].GetNameColor ();
         temp.GetComponent<Text>().fontStyle = FontStyle.Bold;
 
-
         temp = Instantiate (textObjPrefab, gameObject.transform);
 		temp.GetComponent<Text> ().text = conversation [currentIndex].text;
 
@@ -53,7 +57,6 @@ public class TimedDialogue : MonoBehaviour {
 		public string text;
     
 		public Color GetNameColor(){
-            Debug.Log("Setting name color: " + name);
             if (name.ToLower() == "veronica") {
                 //return Color.blue;
                 return ConvertColor(83,126,162);
@@ -66,10 +69,7 @@ public class TimedDialogue : MonoBehaviour {
                 //return Color.red;
                 return ConvertColor(124,95,149);
             }
-        
             else {
-
-                Debug.Log("No valid color");
                 return Color.white;
             }
 		}
@@ -79,15 +79,11 @@ public class TimedDialogue : MonoBehaviour {
         }
     }
 
-    
-
 	void FixedUpdate(){
 		timer += Time.fixedDeltaTime;
 		if (currentIndex < conversation.Count && timer >= timeBetweenText) {
-			Debug.Log ("Next");
 			Next ();
             timer = 0;
 		}
 	}
-
 }
