@@ -17,12 +17,11 @@ public class ShowCharacter : OneTimeEvent {
 		public override IEnumerator TriggerEvent() {
 				DeactivateTrigger();
 				//switches isVeronicaAdded(located in GameManager) to true so she can be activated by GameManager for other scenes
-				GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-				gameManager.isVeronicaAdded = true;
+				GameManager.isVeronicaAdded = true;
 				//------------------------------------------------------------
-				GameObject.Find("Companion2").transform.localScale = new Vector3(1, 1, 1);
-				GameObject.Find("Companion2").GetComponent<Rigidbody>().useGravity = true;
-				GameObject.Find("Companion2").GetComponent<CompanionMovement>().enabled = true;
+				GameObject.Find("Veronica").transform.localScale = new Vector3(1, 1, 1);
+				GameObject.Find("Veronica").GetComponent<Rigidbody>().useGravity = true;
+				GameObject.Find("Veronica").GetComponent<CompanionMovement>().enabled = true;
 				yield return new WaitForFixedUpdate();
 
 	}

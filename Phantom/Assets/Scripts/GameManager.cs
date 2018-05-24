@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-	public bool isVeronicaAdded = true; //checks if Veronica has joined party
+	public static bool isVeronicaAdded; //checks if Veronica has joined party
 	// Use this for initialization
 	void Start () {
-				Debug.Log("GAMEMANAGER START CALLED");
+				Debug.Log("Gamemanager start called.");
 				if (isVeronicaAdded == true) {
-						Debug.Log("ISVERONICAADDED IS TRUE!!!!!!!!!");
-						GameObject.Find("Companion2").transform.localScale = new Vector3(1, 1, 1);
-						GameObject.Find("Companion2").GetComponent<Rigidbody>().useGravity = true;
-						GameObject.Find("Companion2").GetComponent<CompanionMovement>().enabled = true;
+						Debug.Log("isVeronicaAdded is true");
+						GameObject.Find("Veronica").transform.localScale = new Vector3(1, 1, 1);
+						GameObject.Find("Veronica").GetComponent<Rigidbody>().useGravity = true;
+						GameObject.Find("Veronica").GetComponent<CompanionMovement>().enabled = true;
 				}
 				if (isVeronicaAdded == false) {
-						Debug.Log("ISVERONICAADDED IS FALSE!!!!!!!!");
+						Debug.Log("isVeronicaAdded is false");
 				}
 
         // Handle Configuration settings
