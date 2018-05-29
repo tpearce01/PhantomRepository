@@ -56,6 +56,10 @@ public class Fade : MonoBehaviour {
         coroutine = StartCoroutine(FadeOutTextCR(target, fadeDuration));
     }
 
+    public void FadeInSprite(SpriteRenderer target) {
+        StartCoroutine(FadeInSpriteCR(target, fadeDuration));
+    }
+
     public void FadeOutSprite(SpriteRenderer target, float a_duration) {
         StartCoroutine(FadeOutSpriteCR(target, a_duration));
     }
@@ -132,4 +136,13 @@ public class Fade : MonoBehaviour {
         }
     }
 
+    IEnumerator FadeInSpriteCR(SpriteRenderer target, float a_fadeDuration) {
+        Initialize();
+
+        // Fade In
+        while (target.color.a < 1) {
+            target.color = new Color(target.color.r, target.color.g, target.color.b, target.color.a + alphaChangePerFrame);
+            yield return new WaitForFixedUpdate();
+        }
+    }
 }

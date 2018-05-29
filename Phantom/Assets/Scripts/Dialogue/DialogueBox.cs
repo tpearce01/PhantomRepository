@@ -26,8 +26,8 @@ public class DialogueBox : MonoBehaviour {
 
 	[System.Serializable]
 	class Dialogue{
-		public string name;
-		public string text;
+		public string name = "";
+		public string text = "";
 
 		public Color GetNameColor(){
 			if (name == "test1") {
