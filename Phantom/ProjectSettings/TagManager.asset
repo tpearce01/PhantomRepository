@@ -5,9 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Companion
+<<<<<<< HEAD
   - ColliderOpening
   - PlayerCollider
   - Dialogue
+=======
+  - Follow
+>>>>>>> master
   layers:
   - Default
   - TransparentFX

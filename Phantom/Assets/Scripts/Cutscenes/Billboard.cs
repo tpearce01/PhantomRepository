@@ -6,7 +6,7 @@ public class Billboard : MonoBehaviour {
     public Vector2 showAtPos;
     public float showAtTime;
     public float moveSpeed;
-    float currentTime = 0;
+
 	// Use this for initialization
 	void Start () {
         gameObject.transform.position = showAtPos;

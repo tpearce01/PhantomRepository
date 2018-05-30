@@ -29,6 +29,13 @@ public class MoveObjectEvent : Event {
             }
             yield return new WaitForFixedUpdate();
         }
+        if (TargetObject.CompareTag("Companion")) {
+            GameObject[] companions = GameObject.FindGameObjectsWithTag("Companion");
+            foreach (GameObject cm in companions) {
+                cm.GetComponent<CompanionMovement>().enabled = false;
+            }
+            yield return new WaitForFixedUpdate();
+        }
 
         //Move object(s)
         for (int i = 0; i < arrDestinations.Length; i++) {
@@ -47,6 +54,12 @@ public class MoveObjectEvent : Event {
         // If target is Player, re-enable movement
         if (TargetObject.CompareTag("Player")) {
             Player.instance.EnableMovement();
+            GameObject[] companions = GameObject.FindGameObjectsWithTag("Companion");
+            foreach (GameObject cm in companions) {
+                cm.GetComponent<CompanionMovement>().enabled = true;
+            }
+        }
+        if (TargetObject.CompareTag("Companion")) {
             GameObject[] companions = GameObject.FindGameObjectsWithTag("Companion");
             foreach (GameObject cm in companions) {
                 cm.GetComponent<CompanionMovement>().enabled = true;
