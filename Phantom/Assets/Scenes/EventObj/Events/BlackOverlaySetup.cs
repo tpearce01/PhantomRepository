@@ -21,11 +21,11 @@ public class BlackOverlaySetup : MonoBehaviour {
     private float alphaChangePerFrame;  // Amount to fade each frame
 
     // Set default values
-    void Initialize() {
+    void Initialize(float alpha) {
         callsPerSec = 1 / Time.fixedDeltaTime;
         overlay = gameObject.transform.Find("Canvas").Find("Overlay").GetComponent<Image>();
         overlay.rectTransform.sizeDelta = new Vector2(Screen.width, Screen.height);
-        overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 0);
+        overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, alpha);
     }
 
     /// <summary>
@@ -45,7 +45,7 @@ public class BlackOverlaySetup : MonoBehaviour {
 
     // Coroutine to fade out
     IEnumerator FadeOutOverlay(float a_fadeDuration) {
-        Initialize();
+        Initialize(1);
         fadeIn = false;
         StopCoroutine("FadeInOverlay");
         alphaChangePerFrame = 1 / (a_fadeDuration * callsPerSec);
@@ -59,7 +59,7 @@ public class BlackOverlaySetup : MonoBehaviour {
 
     // Coroutine to fade in
     IEnumerator FadeInOverlay(float a_fadeDuration) {
-        Initialize();
+        Initialize(0);
         fadeIn = true;
         StopCoroutine("FadeOutOverlay");
         alphaChangePerFrame = 1 / (a_fadeDuration * callsPerSec);

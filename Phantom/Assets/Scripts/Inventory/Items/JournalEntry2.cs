@@ -2,9 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+//using UnityEngine.WaitForSeconds;
+// MAKE SURE TO FIX DIALOGUE WHEN PLAYER GETS ITEM
 public class JournalEntry2 : Item
 {
+    public GameObject myObject;
+
     void Awake()
     {
         itemName = "JournalEntry2";
@@ -14,7 +18,16 @@ public class JournalEntry2 : Item
 
     public override IEnumerator TriggerEvent()
     {
-        // Event Code Goes Here
+        //StartCoroutine(TimePassage());
+        //myObject.SetActive(true);
         yield break;
     }
+    //IEnumerator TimePassage()
+    //{
+    //    myObject.SetActive(true); // Event Code Goes Here
+    //                              //yield return new WaitForSeconds(5);
+    //                              // myObject.SetActive(false);
+    //    yield break;
+    //}
+
 }

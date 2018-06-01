@@ -11,18 +11,18 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1906480990241850}
   m_IsPrefabParent: 1
---- !u!1 &1423793755524078
+--- !u!1 &1330007653816156
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 224318873882690878}
-  - component: {fileID: 222044192500138358}
-  - component: {fileID: 114462221675967490}
-  - component: {fileID: 114771790007679426}
-  - component: {fileID: 114311400152519160}
+  - component: {fileID: 224232150777379954}
+  - component: {fileID: 222657414706902904}
+  - component: {fileID: 114381500392842078}
+  - component: {fileID: 114871134062049580}
+  - component: {fileID: 114730492549628018}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -30,24 +30,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1806143512802316
+--- !u!1 &1469126519154434
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 224510553048648670}
-  - component: {fileID: 223736584590975782}
-  - component: {fileID: 114597774686894410}
-  - component: {fileID: 114585916926870192}
+  - component: {fileID: 224448204207507078}
+  - component: {fileID: 223739459714795020}
+  - component: {fileID: 114249617863193834}
+  - component: {fileID: 114102658858066220}
+  - component: {fileID: 222428754613117334}
   m_Layer: 5
-  m_Name: Canvas (2)
+  m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1906480990241850
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,121 +56,83 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4627504165732138}
-  m_Layer: 0
+  - component: {fileID: 224977030204504088}
+  - component: {fileID: 222546702441060944}
+  - component: {fileID: 114896572581061260}
+  - component: {fileID: 114224921270350266}
+  - component: {fileID: 114627433422219388}
+  m_Layer: 5
   m_Name: TimedDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4627504165732138
-Transform:
+--- !u!114 &114102658858066220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469126519154434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &114224921270350266
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1906480990241850}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 224510553048648670}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114311400152519160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1423793755524078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textObjPrefab: {fileID: 1272742646431362, guid: 73a2eaf6a49ae4680b15214192ed18b7,
-    type: 2}
-  dialogueUI: {fileID: 1806143512802316}
-  conversation:
-  - name: Veronica
-    text: Tell me why we're going again?
-    timeToDisplay: 4
-  - name: Robbie
-    text: It's his birthday.
-    timeToDisplay: 8
-  - name: Veronica
-    text: I know that. I mean, why here?
-    timeToDisplay: 12
-  - name: Robbie
-    text: Well you know he's always been like this, looking for adventure and whatnot.
-      And he's been dying for weeks to check out this park.
-    timeToDisplay: 16
-  - name: Veronica
-    text: Great. So we're going to an abandoned park for his birthday because he wants
-      to see some broken buildings.
-    timeToDisplay: 20
-  - name: Robbie
-    text: You can't forget about the ghosts.
-    timeToDisplay: 24
-  - name: Veronica
-    text: Right...the ghosts. Wait, aren't there security guards?
-    timeToDisplay: 28
-  - name: Robbie
-    text: Brian said he had that covered. Apparently he scoped it out last week. One
-      security guard roams the premises but only around the perimeter.
-    timeToDisplay: 32
-  - name: Robbie
-    text: People are able to sneak in and out all the time so we should be ok once
-      we actually get inside. There's no surveillance cameras either.
-    timeToDisplay: 36
-  - name: Veronica
-    text: I still think this is stupid.
-    timeToDisplay: 40
-  - name: Veronica
-    text: So how much longer is it 'til we're there?
-    timeToDisplay: 50
-  - name: Robbie
-    text: Almost. It's only about two more miles. Hey Chris, you ok? You haven't really
-      said anything this whole time.
-    timeToDisplay: 54
-  - name: Christopher
-    text: Uh, I'm fine. It's just...I'm not really into this whole idea.
-    timeToDisplay: 58
-  - name: Robbie
-    text: You mean the curse?
-    timeToDisplay: 62
-  - name: Christopher
-    text: '...'
-    timeToDisplay: 66
-  - name: Veronica
-    text: Oooh. Are you telling me you're scared?
-    timeToDisplay: 70
-  - name: Christopher
-    text: Maybe just a little
-    timeToDisplay: 74
-  - name: Robbie
-    text: It's all just hoaxes and stories. I don't think anything's going to happen.
-      We should be fine.
-    timeToDisplay: 78
-  - name: Christopher
-    text: Yeah...just fine...
-    timeToDisplay: 82
-  - name: Christopher
-    text: Hey...did you guys see that?
-    timeToDisplay: 92
-  - name: Veronica
-    text: What?
-    timeToDisplay: 96
-  - name: Christopher
-    text: Nothing...nevermind.
-    timeToDisplay: 100
---- !u!114 &114462221675967490
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+--- !u!114 &114249617863193834
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1423793755524078}
+  m_GameObject: {fileID: 1469126519154434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &114381500392842078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330007653816156}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -191,49 +154,44 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114585916926870192
+--- !u!114 &114627433422219388
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806143512802316}
+  m_GameObject: {fileID: 1906480990241850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &114597774686894410
+  timeBetweenText: 0
+  textObjPrefab: {fileID: 1272742646431362, guid: 73a2eaf6a49ae4680b15214192ed18b7,
+    type: 2}
+  dialogueUI: {fileID: 0}
+  dialogue: 
+--- !u!114 &114730492549628018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806143512802316}
+  m_GameObject: {fileID: 1330007653816156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!114 &114771790007679426
+  timeBetweenText: 0
+  textObjPrefab: {fileID: 1272742646431362, guid: 73a2eaf6a49ae4680b15214192ed18b7,
+    type: 2}
+  dialogueUI: {fileID: 1469126519154434}
+  dialogue: 
+--- !u!114 &114871134062049580
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1423793755524078}
+  m_GameObject: {fileID: 1330007653816156}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -250,18 +208,57 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
---- !u!222 &222044192500138358
+--- !u!114 &114896572581061260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906480990241850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &222428754613117334
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1423793755524078}
---- !u!223 &223736584590975782
+  m_GameObject: {fileID: 1469126519154434}
+--- !u!222 &222546702441060944
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906480990241850}
+--- !u!222 &222657414706902904
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330007653816156}
+--- !u!223 &223739459714795020
 Canvas:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806143512802316}
+  m_GameObject: {fileID: 1469126519154434}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
@@ -276,17 +273,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!224 &224318873882690878
+--- !u!224 &224232150777379954
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1423793755524078}
+  m_GameObject: {fileID: 1330007653816156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224510553048648670}
+  m_Father: {fileID: 224448204207507078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -294,22 +291,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &224510553048648670
+--- !u!224 &224448204207507078
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806143512802316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1469126519154434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.6666666}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 224318873882690878}
-  m_Father: {fileID: 4627504165732138}
+  - {fileID: 224232150777379954}
+  m_Father: {fileID: 224977030204504088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -16.06, y: -3.0599694}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &224977030204504088
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906480990241850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224448204207507078}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}

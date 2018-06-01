@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 223341625039369050}
   - component: {fileID: 114574097047817038}
   - component: {fileID: 114094026152440080}
+  - component: {fileID: 222520295876337380}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -180,25 +181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBetweenText: 0
   textObjPrefab: {fileID: 1272742646431362, guid: 73a2eaf6a49ae4680b15214192ed18b7,
     type: 2}
   dialogueUI: {fileID: 1477457980569938}
-  conversation:
-  - name: test1
-    text: Testing dialogue
-    timeToDisplay: 0
-  - name: test2
-    text: Test
-    timeToDisplay: 3
-  - name: test1
-    text: Testing dialogue
-    timeToDisplay: 6
-  - name: test2
-    text: test
-    timeToDisplay: 9
-  - name: test1
-    text: Testing dialogue
-    timeToDisplay: 12
+  dialogue: 
 --- !u!114 &114574097047817038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,6 +219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 1477457980569938}
+--- !u!222 &222520295876337380
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477457980569938}
 --- !u!222 &222801361662102720
 CanvasRenderer:
   m_ObjectHideFlags: 1
