@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Phantom_endscene : MonoBehaviour {
     Vector3 startPosition;
+    public GameObject followTarget;
 
     void Awake() {
         startPosition = gameObject.transform.position;
     }
 
     void Start() {
-        CameraFollow.AddTarget(gameObject);
+        Instantiate(followTarget);
+        CameraFollow.AddTarget(followTarget);
     }
 
 	void Update () {
