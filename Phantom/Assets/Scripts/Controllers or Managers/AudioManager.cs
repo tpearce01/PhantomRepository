@@ -52,7 +52,15 @@ public class AudioManager : MonoBehaviour {
 
 	void Update(){
 		Cleanup ();
-	}
+        UpdatePitch();
+    }
+
+    // Matches audio speed to the current timescale
+    private void UpdatePitch() {
+        foreach (AudioSource source in sources) {
+            source.pitch = Time.timeScale;
+        }
+    }
 
     public void UpdateVolume(float value) {
         volume = Mathf.Clamp(value, 0, 1);
@@ -207,7 +215,7 @@ public enum Sound{
     Explosion = 10,
     FeedbackGlitch = 11,
     FireCraclking = 12,
-    GhostNoice = 13,
+    GhostNoise = 13,
     GhostSound1 = 14,
     GhostSound2 = 15,
     GhostSound3 = 16,
