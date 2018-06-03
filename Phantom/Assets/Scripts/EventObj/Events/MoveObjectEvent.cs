@@ -19,7 +19,7 @@ public class MoveObjectEvent : Event {
     public override IEnumerator TriggerEvent() {
         
         TargetObject = GameObject.Find(TargetObjectName);   // Find the target object based on name. Inefficient, but it's easy to implement
-
+        Debug.Log("Target: " + TargetObject.name);
         // If target is Player, disable player movement
         if (TargetObject.CompareTag("Player")) {
             Player.instance.DisableMovement();
@@ -41,7 +41,6 @@ public class MoveObjectEvent : Event {
             }
             long end = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
             long totalTime = end - start;
-            Debug.Log("Time: " + totalTime);
         }
 
         // If target is Player, re-enable movement
