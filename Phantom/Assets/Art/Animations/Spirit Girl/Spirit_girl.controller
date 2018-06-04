@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Veronica
+  m_Name: Spirit_girl
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Walking
@@ -95,7 +95,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 29652c9f9cdf4244e859024440967473, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0f09ff4f24680ae46bb1e49428fb7a01, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -121,7 +121,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0d127861bdaafce4b85f30f16db50a7c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7cf2e861781c6ed438c06d374c037164, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

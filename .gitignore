@@ -42,3 +42,5 @@ Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide-shm
 Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide-shm
 Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide-wal
 *.ide-shm
+Phantom/Assets/Art/Animations/Spirit Girl/Spirit_girl.controller
+Phantom/ProjectSettings/EditorBuildSettings.asset
