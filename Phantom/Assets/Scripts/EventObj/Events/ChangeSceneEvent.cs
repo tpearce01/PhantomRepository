@@ -21,7 +21,7 @@ public class ChangeSceneEvent : Event {
         overlay.FadeIn(fadeTime);
         yield return new WaitForSeconds(fadeTime);
 
-        SceneManager.LoadScene(sceneToLoad.ToString());
+        SceneManager.LoadScene();
         yield break;
     }
 

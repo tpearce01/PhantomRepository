@@ -18,8 +18,15 @@ public class DataReference {
 // Scenes which may be loaded to
 public enum Scenes {
     driving_to_the_park,
+<<<<<<< HEAD
     MainMenu,
     EndScene,
     Carousel,
     HighwayRoad
+=======
+    HauntedHouse,
+    HauntedHouseInside,
+    Hut,
+
+>>>>>>> alexs-test-branch
 }
