@@ -23,6 +23,7 @@ public class TriggerOnItems : MonoBehaviour
         if((doll.GetComponent("Fade") as Fade) != null & (Jounral1.GetComponent("Fade") as Fade) != null & (dinerKey.GetComponent("Fade") as Fade) != null)
         {
             Player_caroline.SetActive(true);
+            dialogue.SetActive(true);
         }
     }
     
