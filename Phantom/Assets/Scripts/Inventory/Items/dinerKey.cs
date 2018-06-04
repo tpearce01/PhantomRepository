@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Journal1 : Item
+public class dinerKey : Item
 {
     void Awake()
     {
-        itemName = "Journal1";
-        Texture2D tex = Resources.Load<Texture2D>("RustedKey");
+        itemName = "DinerKey";
+        Texture2D tex = Resources.Load<Texture2D>("Russty Key");
         image = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0, 0));
     }
 
@@ -18,3 +18,4 @@ public class Journal1 : Item
         yield break;
     }
 }
+

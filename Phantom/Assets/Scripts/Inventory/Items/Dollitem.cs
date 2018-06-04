@@ -8,7 +8,7 @@ public class Dollitem : Item
     void Awake()
     {
         itemName = "Doll";
-        Texture2D tex = Resources.Load<Texture2D>("Doll");
+        Texture2D tex = Resources.Load<Texture2D>("Russty Key");
         image = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0, 0));
     }
 
