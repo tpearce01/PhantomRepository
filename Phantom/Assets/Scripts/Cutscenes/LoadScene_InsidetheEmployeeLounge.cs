@@ -23,25 +23,31 @@ public class LoadScene_InsidetheEmployeeLounge : MonoBehaviour
     {
         timeToLoad -= Time.deltaTime;
 
-        if (timeToLoad < 160 & timeToLoad > 160-Time.deltaTime) //caroline enters after some time
+        if (timeToLoad < 83 & timeToLoad > 83-Time.deltaTime) //caroline enters after some time
         {
             playerIn_Caroline.SetActive(true);
         }
 
-        if (timeToLoad < 70) //robbie and veronica leave after some time
+        if (timeToLoad < 70 & timeToLoad > 70-Time.deltaTime) //robbie and veronica leave after some time
+        {
+            AudioManager.instance.PlaySound(Sound.GluggingWater);
+        }
+
+        if (timeToLoad < 40) //robbie and veronica leave after some time
         {
             playerout_robbie.SetActive(false);
             playerout_veronica.SetActive(false);
         }
 
-        if (timeToLoad < 24)//yvette leaves
+        if (timeToLoad < 14)//yvette leaves
         {
             playerout_yvette.SetActive(false);
         }
 
-        if (timeToLoad < 7) //caroline leaves
+        if (timeToLoad < 7 & timeToLoad > 7-Time.deltaTime) //caroline leaves
         {
             playerIn_Caroline.SetActive(false);
+            AudioManager.instance.PlaySound(Sound.Thud);
         }
 
         if (timeToLoad <= 0)

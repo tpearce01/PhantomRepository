@@ -302,6 +302,65 @@ Transform:
   m_Father: {fileID: 424293786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &137556697
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1104924681}
+    m_Modifications:
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389689217082330, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102958474226956, guid: f3c2f1765f063f947915372d8182f35a,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1104924671}
+    - target: {fileID: 4610179074310840, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610179074310840, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610179074310840, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f3c2f1765f063f947915372d8182f35a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &317304219
 Prefab:
   m_ObjectHideFlags: 0
@@ -311,15 +370,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.8
+      value: 1.79
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.5
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalRotation.x
@@ -343,7 +402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_Name
-      value: Veronica
+      value: Veronicagoeshere
       objectReference: {fileID: 0}
     - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
         type: 2}
@@ -353,6 +412,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &350336698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1218096995076748, guid: f3c2f1765f063f947915372d8182f35a,
+    type: 2}
+  m_PrefabInternal: {fileID: 137556697}
 --- !u!1 &424293783
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,11 +508,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &433109487 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202,
-    type: 2}
-  m_PrefabInternal: {fileID: 1751617532}
 --- !u!1001 &571347921
 Prefab:
   m_ObjectHideFlags: 0
@@ -508,7 +567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4680176512525822, guid: 4d39f0d312d6147a98a8022bd8dffc66, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4680176512525822, guid: 4d39f0d312d6147a98a8022bd8dffc66, type: 2}
       propertyPath: m_LocalRotation.x
@@ -708,6 +767,57 @@ Transform:
   m_PrefabParentObject: {fileID: 4680176512525822, guid: 4d39f0d312d6147a98a8022bd8dffc66,
     type: 2}
   m_PrefabInternal: {fileID: 746893736}
+--- !u!1001 &1182163498
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1104924681}
+    m_Modifications:
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466889854322278, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170025725728460, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388075974041236, guid: 73ac7137856371a448ec394fa245672c,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 350336698}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 73ac7137856371a448ec394fa245672c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1201128226
 Prefab:
   m_ObjectHideFlags: 0
@@ -717,15 +827,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: -2.02
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.12
+      value: -0.64
       objectReference: {fileID: 0}
     - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_LocalRotation.x
@@ -749,7 +859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
       propertyPath: m_Name
-      value: robbie
+      value: robbiegoeshere
       objectReference: {fileID: 0}
     - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
         type: 2}
@@ -784,8 +894,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273237488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.86, y: -5.17, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 0.2}
+  m_LocalPosition: {x: 1, y: -5.17, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 63597975}
   m_RootOrder: 0
@@ -850,66 +960,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202,
     type: 2}
   m_PrefabInternal: {fileID: 1201128226}
---- !u!1001 &1402130554
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1104924681}
-    m_Modifications:
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1104924671}
-    - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_Name
-      value: caroline
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1490679244 stripped
+--- !u!1 &1369577522 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202,
+  m_PrefabParentObject: {fileID: 1170025725728460, guid: 73ac7137856371a448ec394fa245672c,
     type: 2}
-  m_PrefabInternal: {fileID: 1402130554}
+  m_PrefabInternal: {fileID: 1182163498}
 --- !u!1001 &1614502475
 Prefab:
   m_ObjectHideFlags: 0
@@ -955,42 +1010,41 @@ Prefab:
       value: "Yvette: \"Hey! It took you all long enough.\"\r\nVeronica: \u201CHey,
         Yvette\u2026\u201D\r\nRobbie: \"You know we gotta be fashionably late, sis.\"\r\nChristopher:
         \u201CSorry. But also, where\u2019s the other one?\u201D\r\nBrian: \"You mean
-        Caroline? She left a bit ago to get more drinks from the car.\u201D\r\n>Caroline
-        appears.\r\nCaroline: \u201CBack.\u201D\r\nYvette: \u201CSpeak of the devil!\u201D\r\nCaroline:
+        Caroline? She left a bit ago to get more drinks from the car.\u201D\r\nCaroline:
+        \u201CBack.\u201D\r\nYvette: \u201CSpeak of the devil!\u201D\r\nCaroline:
         \u201CIs that a new cup in your hand, Yvette? God, you\u2019re probably drunk
         already.\u201D\r\nYvette: \u201CI\u2019m NOT drunk! Just happily buzzed.\u201D\r\nRobbie:
         \u201CWell, now that the gang\u2019s all here, we can finally get this party
         started!\u201D\r\nRobbie: \u201CEveryone, grab a cup. Let\u2019s start things
-        off with a toast!\u201D\r\n>Sound effect of drinks being poured\r\nVeronica:
-        \u201C...\u201D\r\nRobbie: \u201CHere, Veronica.\u201D\r\nVeronica: \u201CO-Oh\u2026
-        Actually, I-\u201D\r\nYvette: \u201CWhat, can\u2019t even handle a single
-        drink, girl?\u201D\r\nVeronica: \u201CHuh?\u201D\r\nRobbie: \u201CC\u2019mon,
-        Yvette. Don\u2019t be mean to her.\u201D\r\nVeronica: \u201CI mean, she\u2019s
-        not wrong. Just the smell of alcohol gives me a headache...\u201D\r\nRobbie:
-        \u201CAre you okay? Do you maybe want to walk around a bit for some fresh
-        air?\u201D\r\nVeronica: \u201C...\u201D\r\nChristopher: \u201CThat sounds
-        like a good idea. It\u2019d clear your head.\u201D\r\nVeronica: \u201CTrue\u2026
-        Okay, we can do a little exploring while the others have their fun in here.\u201D\r\nRobbie:
-        \u201CSounds good. Alright, Veronica and I will be taking off.\u201D\r\nChristopher:
-        \u201C \u2018Kay. Good luck, man.\u201D\r\nRobbie: \u201CHeh. I\u2019ll do
-        my best!\u201D\r\nVeronica: \u201CHmm?\u201D\r\nRobbie: \u201CC\u2019mon,
-        let\u2019s go.\u201D\r\n>Robbie and Veronica leave\r\nYvette: \u201C...\u201D\r\nCaroline:
-        \u201CYvette? Are you okay?\u201D\r\nYvette: \u201CMmmm\u2026 Y-yea, I just
-        feel a little\u2026\u201D\r\nYvette: \u201C...?! H-Huh?!\u201D\r\nCaroline:
-        \u201CHmm? Yvette-?\u201D\r\nYvette: \u201CI\u2026 I see someone..!!\u201D\r\nChristopher:
-        \u201CHuh?\u201D\r\nYvette: \u201CY-You don\u2019t..?\u201D\r\nChristopher:
-        \u201CNo. There\u2019s no one here but us.\u201D\r\nYvette: \u201C...\u201D\r\nYvette:
-        \u201CI\u2019m... gunna step outside. \u201D\r\n>Yvette Leaves\r\nCaroline:
-        \u201C...\u201D\r\nCaroline: \u201CI\u2019m gunna go get something for Yvette.\u201D\r\nChristopher:
-        \u201CWant me to come with?\u201D\r\nCaroline: \u201CNo, stay here.\u201D\nChristopher:
-        \u201C...\u201D\r\nChristopher: \u201CNow I\u2019m alone.\u201D\r\nChristopher:
-        \u201C...\u201D\r\n Christopher: \u201CI wonder if there\u2019s anything interesting
-        here\u2026\u201D\r\n\n"
+        off with a toast!\u201D\r\nVeronica: \u201C...\u201D\r\nRobbie: \u201CHere,
+        Veronica.\u201D\r\nVeronica: \u201CO-Oh\u2026 Actually, I-\u201D\r\nYvette:
+        \u201CWhat, can\u2019t even handle a single drink, girl?\u201D\r\nVeronica:
+        \u201CHuh?\u201D\r\nRobbie: \u201CC\u2019mon, Yvette. Don\u2019t be mean to
+        her.\u201D\r\nVeronica: \u201CI mean, she\u2019s not wrong. Just the smell
+        of alcohol gives me a headache...\u201D\r\nRobbie: \u201CAre you okay? Do
+        you maybe want to walk around a bit for some fresh air?\u201D\r\nVeronica:
+        \u201C...\u201D\r\nChristopher: \u201CThat sounds like a good idea. It\u2019d
+        clear your head.\u201D\r\nVeronica: \u201CTrue\u2026 Okay, we can do a little
+        exploring while the others have their fun in here.\u201D\r\nRobbie: \u201CSounds
+        good. Alright, Veronica and I will be taking off.\u201D\r\nChristopher: \u201C
+        \u2018Kay. Good luck, man.\u201D\r\nRobbie: \u201CHeh. I\u2019ll do my best!\u201D\r\nVeronica:
+        \u201CHmm?\u201D\r\nRobbie: \u201CC\u2019mon, let\u2019s go.\u201D\r\nYvette:
+        \u201C...\u201D\r\nCaroline: \u201CYvette? Are you okay?\u201D\r\nYvette:
+        \u201CMmmm\u2026 Y-yea, I just feel a little\u2026\u201D\r\nYvette: \u201C...?!
+        H-Huh?!\u201D\r\nCaroline: \u201CHmm? Yvette-?\u201D\r\nYvette: \u201CI\u2026
+        I see someone..!!\u201D\r\nChristopher: \u201CHuh?\u201D\r\nYvette: \u201CY-You
+        don\u2019t..?\u201D\r\nChristopher: \u201CNo. There\u2019s no one here but
+        us.\u201D\r\nYvette: \u201C...\u201D\r\nYvette: \u201CI\u2019m... gunna step
+        outside. \u201D\r\nCaroline: \u201C...\u201D\r\nCaroline: \u201CI\u2019m gunna
+        go get something for Yvette.\u201D\r\nChristopher: \u201CWant me to come with?\u201D\r\nCaroline:
+        \u201CNo, stay here.\u201D\nChristopher: \u201C...\u201D\r\nChristopher: \u201CNow
+        I\u2019m alone.\u201D\r\nChristopher: \u201C...\u201D\r\n Christopher: \u201CI
+        wonder if there\u2019s anything interesting here\u2026\u201D\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: timeBetweenText
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
@@ -1011,65 +1065,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2d60f686a0af74c96c090e8d40ec32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToLoad: 190
+  timeToLoad: 97
   withFade: 0
-  playerIn_Caroline: {fileID: 1490679244}
+  playerIn_Caroline: {fileID: 1369577522}
   playerout_robbie: {fileID: 1354751244}
   playerout_veronica: {fileID: 1822199465}
-  playerout_yvette: {fileID: 433109487}
-  playerout_caroline: {fileID: 1490679244}
+  playerout_yvette: {fileID: 350336698}
+  playerout_caroline: {fileID: 1369577522}
   fadePanel: {fileID: 0}
---- !u!1001 &1751617532
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1104924681}
-    m_Modifications:
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_Name
-      value: yvette
-      objectReference: {fileID: 0}
-    - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1104924671}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1822199465 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202,
