@@ -369,6 +369,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1333677483071712, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
+      propertyPath: m_Name
+      value: Christopher
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bedaccfa425df4a5dbdb3ecc724ac49c, type: 2}
   m_IsPrefabParent: 0
@@ -393,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd104a632f6ccd4c98f32de08712220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetObjectName: Player
+  TargetObjectName: Christopher
   arrDestinations:
   - TargetDestination: {x: 1000, y: -1}
     speed: 3
@@ -405,9 +409,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 557679933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b76f029400ea742b26f48a9c0df556, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aca14c9768c6f944815882fb06151db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 3
   delay: 1
   blackOverlayPrefab: {fileID: 1863323461550406, guid: 8cec31e91ec48414b90a17e918188f71,
     type: 2}
@@ -613,11 +618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd104a632f6ccd4c98f32de08712220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetObjectName: Player
+  TargetObjectName: Christopher
   arrDestinations:
   - TargetDestination: {x: 1.6, y: 6}
     speed: 3
---- !u!114 &873344325
+--- !u!114 &873344328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -628,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aca14c9768c6f944815882fb06151db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 2
+  sceneToLoad: 6
   delay: 1
   blackOverlayPrefab: {fileID: 1863323461550406, guid: 8cec31e91ec48414b90a17e918188f71,
     type: 2}
@@ -895,6 +900,17 @@ Prefab:
       propertyPath: m_Name
       value: Caroline
       objectReference: {fileID: 0}
+    - target: {fileID: 212447065839718336, guid: 75fd57556bc2c4d118f2195836dba202,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 65cf33dbe26beae4ab541285c7a4961d,
+        type: 3}
+    - target: {fileID: 95032613636709972, guid: 75fd57556bc2c4d118f2195836dba202,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 31c88ab21ce70e849ba392eab3748f2c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
   m_IsPrefabParent: 0
@@ -1520,7 +1536,7 @@ Prefab:
         type: 2}
       propertyPath: eventToTrigger.Array.data[1]
       value: 
-      objectReference: {fileID: 873344325}
+      objectReference: {fileID: 873344328}
     - target: {fileID: 114206063549885636, guid: 8f111096e050b494085a82bb1d7ba0f7,
         type: 2}
       propertyPath: eventToTrigger.Array.data[0]
