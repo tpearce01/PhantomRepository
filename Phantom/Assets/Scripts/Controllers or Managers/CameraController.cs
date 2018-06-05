@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-	public static Camera camera;
+	//public static Camera mainCamera;
 	public static GameObject target;
 	public float sizeLerpSpeed;
 	public float followLerpSpeed;
@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour {
 	float defaultSize = 5;
 
 	void Awake(){
-		camera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera>();
+        //mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera>();
 		target = GameObject.FindGameObjectWithTag ("Player");
 	}
 
@@ -23,12 +23,12 @@ public class CameraController : MonoBehaviour {
 	}
 
 	void Follow(){
-		camera.transform.position = Vector3.Lerp (gameObject.transform.position, new Vector3(target.transform.position.x, target.transform.position.y, gameObject.transform.position.z), followLerpSpeed) + (Vector3)offset;
+		GetComponent<Camera>().transform.position = Vector3.Lerp (gameObject.transform.position, new Vector3(target.transform.position.x, target.transform.position.y, gameObject.transform.position.z), followLerpSpeed) + (Vector3)offset;
 	}
 
 	void Resize(){
 		float newSize;
 		newSize = defaultSize;
-		camera.orthographicSize = Mathf.Lerp (camera.orthographicSize, newSize, sizeLerpSpeed);
+		GetComponent<Camera>().orthographicSize = Mathf.Lerp (GetComponent<Camera>().orthographicSize, newSize, sizeLerpSpeed);
 	}
 }

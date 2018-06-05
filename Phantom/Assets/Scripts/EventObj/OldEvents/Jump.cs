@@ -7,7 +7,7 @@ public class Jump : Interactable {
 	public Vector3 destination;
 	GameObject targetObj;
 	[SerializeField] float initialAngle;
-	bool jumpThisFrame = false;
+	//bool jumpThisFrame = false;
     int jumpTriggeredThisFrame = 0;
     bool falling = false;
     bool rising = false;
@@ -49,16 +49,13 @@ public class Jump : Interactable {
 
 		float distance = Mathf.Abs(targetObj.transform.position.x - destination.x);
 
-		float xForce;
-		float yForce;
-
 
 		float initialVelocity = (1 / Mathf.Cos(initialAngle)) * Mathf.Sqrt((0.5f * gravity * Mathf.Pow(distance, 2)) / (distance * Mathf.Tan(initialAngle) + yOffset));
 
 		Vector3 velocity = new Vector3(initialVelocity * Mathf.Cos(initialAngle), initialVelocity * Mathf.Sin(initialAngle), 0);
 
 		rigid.AddForce(velocity * rigid.mass, ForceMode.Impulse);
-        jumpThisFrame = true;
+        //jumpThisFrame = true;
 	}
 
 	void EndJump(){

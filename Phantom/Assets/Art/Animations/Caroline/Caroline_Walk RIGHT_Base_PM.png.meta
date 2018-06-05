@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 65cf33dbe26beae4ab541285c7a4961d
+timeCreated: 1527816966
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Caroline_Walk RIGHT_Base_PM_0
+    21300002: Caroline_Walk RIGHT_Base_PM_1
+    21300004: Caroline_Walk RIGHT_Base_PM_2
+    21300006: Caroline_Walk RIGHT_Base_PM_3
+    21300008: Caroline_Walk RIGHT_Base_PM_4
+    21300010: Caroline_Walk RIGHT_Base_PM_5
+    21300012: Caroline_Walk RIGHT_Base_PM_6
+    21300014: Caroline_Walk RIGHT_Base_PM_7
+    21300016: Caroline_Walk RIGHT_Base_PM_8
+    21300018: Caroline_Walk RIGHT_Base_PM_9
+    21300020: Caroline_Walk RIGHT_Base_PM_10
+    21300022: Caroline_Walk RIGHT_Base_PM_11
+    21300024: Caroline_Walk RIGHT_Base_PM_12
+    21300026: Caroline_Walk RIGHT_Base_PM_13
+    21300028: Caroline_Walk RIGHT_Base_PM_14
+    21300030: Caroline_Walk RIGHT_Base_PM_15
+    21300032: Caroline_Walk RIGHT_Base_PM_16
+    21300034: Caroline_Walk RIGHT_Base_PM_17
+    21300036: Caroline_Walk RIGHT_Base_PM_18
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 27
+        width: 98
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 27
+        width: 114
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_2
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 29
+        width: 209
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 32
+        width: 249
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_4
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 29
+        width: 248
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_5
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 29
+        width: 244
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_6
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 27
+        width: 201
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_7
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 27
+        width: 159
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_8
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 22
+        width: 140
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_9
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 22
+        width: 117
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_10
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 19
+        width: 110
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_11
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 19
+        width: 149
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_12
+      rect:
+        serializedVersion: 2
+        x: 3327
+        y: 22
+        width: 192
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_13
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 29
+        width: 229
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_14
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 29
+        width: 231
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_15
+      rect:
+        serializedVersion: 2
+        x: 4145
+        y: 27
+        width: 183
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_16
+      rect:
+        serializedVersion: 2
+        x: 4437
+        y: 24
+        width: 150
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_17
+      rect:
+        serializedVersion: 2
+        x: 4724
+        y: 24
+        width: 122
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Caroline_Walk RIGHT_Base_PM_18
+      rect:
+        serializedVersion: 2
+        x: 5009
+        y: 24
+        width: 94
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
