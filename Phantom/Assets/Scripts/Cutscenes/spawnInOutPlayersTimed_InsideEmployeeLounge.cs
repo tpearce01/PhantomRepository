@@ -26,7 +26,7 @@ public class spawnInOutPlayersTimed_InsideEmployeeLounge : MonoBehaviour
         if (timeToLoad < 42 & timeToLoad > 42-Time.deltaTime) //ghost enters after some time
         {
             playerIn_ashley.SetActive(true);
-            AudioManager.instance.PlaySoundLoop(Sound.AmbientWind);
+            //AudioManager.instance.PlaySoundLoop(Sound.AmbientWind);
         }
         if (timeToLoad < 15) //ghost enters after some time
         {
