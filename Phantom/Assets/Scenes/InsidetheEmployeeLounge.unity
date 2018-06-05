@@ -394,22 +394,20 @@ Prefab:
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: dialogue
-      value: ">Caroline comes in\r\nCaroline: \u201CChristopher.\u201D\r\nChristopher:
-        \u201CHey. Welcome ba-\u201D\r\nCaroline: \u201CYvette\u2019s gone.\u201D\r\nChristopher:
-        \u201CGone?\u201D\r\nCaroline: \u201CRobbie and Veronica too. They won\u2019t
-        answer their phones.\u201D\r\nCaroline: \u201CThey couldn\u2019t have left
-        because all the gates are locked.\u201D\r\nChristopher: \u201CLocked?\u201D\r\nCaroline:
-        \u201CWe can\u2019t escape and everyone\u2019s missing! What do we do?!\u201D\r\nAshley:
-        \u201CI can help.\u201D\r\nCaroline: \u201C..? Christopher, did you say that?\u201D\r\nChristopher:
-        \u201CNo. It came from this doll I found.\u201D\r\n>Ashley appears\r\nAshley:
-        \u201CHello.\u201D\r\nCaroline: \u201CHuh?!\u201D\r\nAshley: \u201CMy name
-        is Ashley. It\u2019s nice to meet you.\u201D\r\nChristopher: \u201CHello\u2026
-        Umm, what happened to our friends?\u201D\r\nAshley: \u201CThey don\u2019t
-        belong here, so they\u2019\r\nAshley: \u201CPlease forgive him. He\u2019s
-        a good person that does bad things.\u201D\r\n> Ashley disappears\r\nCaroline:
-        \u201CWho..?\u201D\r\nChristopher: \u201C... We\u2019ll figure it out eventually,
-        I\u2019m sure. Let\u2019s go.\u201D\r\nCaroline: \u201CYea\u2026\u201D\r\n>Character
-        can now leave"
+      value: "Caroline: \u201CChristopher.\u201D\r\nChristopher: \u201CHey. Welcome
+        ba-\u201D\r\nCaroline: \u201CYvette\u2019s gone.\u201D\r\nChristopher: \u201CGone?\u201D\r\nCaroline:
+        \u201CRobbie and Veronica too. They won\u2019t answer their phones.\u201D\r\nCaroline:
+        \u201CThey couldn\u2019t have left because all the gates are locked.\u201D\r\nChristopher:
+        \u201CLocked?\u201D\r\nCaroline: \u201CWe can\u2019t escape and everyone\u2019s
+        missing! What do we do?!\u201D\r\nAshley: \u201CI can help.\u201D\r\nCaroline:
+        \u201C..? Christopher, did you say that?\u201D\r\nChristopher: \u201CNo. It
+        came from this doll I found.\u201D\r\r\nAshley: \u201CHello.\u201D\r\nCaroline:
+        \u201CHuh?!\u201D\r\nAshley: \u201CMy name is Ashley. It\u2019s nice to meet
+        you.\u201D\r\nChristopher: \u201CHello\u2026 Umm, what happened to our friends?\u201D\r\nAshley:
+        \u201CThey don\u2019t belong here, so they\u2019\r\nAshley: \u201CPlease forgive
+        him. He\u2019s a good person that does bad things.\u201D\r\nCaroline: \u201CWho..?\u201D\r\nChristopher:
+        \u201C... We\u2019ll figure it out eventually, I\u2019m sure. Let\u2019s go.\u201D\r\nCaroline:
+        \u201CYea\u2026\u201D\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1906480990241850, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
       propertyPath: m_IsActive
@@ -418,7 +416,7 @@ Prefab:
     - target: {fileID: 114311400152519160, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: timeBetweenText
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
@@ -623,6 +621,74 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9bd3bb0190b8a9247b6f7b2488bbd624, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &342248378 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1767984337697624, guid: 90841c9d7e59bd2489012fbc31aa1947,
+    type: 2}
+  m_PrefabInternal: {fileID: 398685624}
+--- !u!1001 &398685624
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.166667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767984337697624, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385928638619674, guid: 90841c9d7e59bd2489012fbc31aa1947,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2087478299}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579927045076386, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 90841c9d7e59bd2489012fbc31aa1947, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &535651558
 GameObject:
@@ -874,11 +940,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &763360118 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202,
-    type: 2}
-  m_PrefabInternal: {fileID: 1720125523}
 --- !u!1 &772704381
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,61 +2166,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73ac7137856371a448ec394fa245672c, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1720125523
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.166667
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900552990260144, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_Name
-      value: ashley_ghost
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599532026426012, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114314264475673402, guid: 75fd57556bc2c4d118f2195836dba202,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 2087478299}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 75fd57556bc2c4d118f2195836dba202, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1786293931
 Prefab:
   m_ObjectHideFlags: 0
@@ -2724,21 +2730,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1333677483071712, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
     type: 2}
   m_PrefabInternal: {fileID: 1664285206}
---- !u!114 &2087478300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2087478299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6553f32464844462a83961b0c3db57aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenText: 0
-  textObjPrefab: {fileID: 0}
-  dialogueUI: {fileID: 0}
-  dialogue: 
 --- !u!4 &2087478309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4324736953287560, guid: bedaccfa425df4a5dbdb3ecc724ac49c,
@@ -2969,8 +2960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31720452d695c7346bdb52be1ba5f64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToLoad: 95
+  timeToLoad: 45
   withFade: 0
-  playerIn_ashley: {fileID: 763360118}
+  playerIn_ashley: {fileID: 342248378}
   door: {fileID: 1550786594}
   fadePanel: {fileID: 0}

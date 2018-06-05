@@ -23,12 +23,12 @@ public class spawnInOutPlayersTimed_InsideEmployeeLounge : MonoBehaviour
     {
         timeToLoad -= Time.deltaTime;
 
-        if (timeToLoad < 42 & timeToLoad > 42-Time.deltaTime) //ghost enters after some time
+        if (timeToLoad < 21 & timeToLoad > 21-Time.deltaTime) //ghost enters after some time
         {
             playerIn_ashley.SetActive(true);
             //AudioManager.instance.PlaySoundLoop(Sound.AmbientWind);
         }
-        if (timeToLoad < 15) //ghost enters after some time
+        if (timeToLoad < 7) //ghost enters after some time
         {
             playerIn_ashley.SetActive(false);
         }
