@@ -1,12 +1,13 @@
-/*﻿using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+/*
     Event to change scenes. Specift the scene to load from the dropdown in the Unity inspector.
     blackOverlayPrefab should not be changed - It needs to be the overlay prefab to fade out properly
+*/
 
 public class ChangeSceneEvent : Event {
     public Scenes sceneToLoad;              // Scene to load
@@ -21,9 +22,8 @@ public class ChangeSceneEvent : Event {
         overlay.FadeIn(fadeTime);
         yield return new WaitForSeconds(fadeTime);
 
-        SceneManager.LoadScene();
+        SceneManager.LoadScene(sceneToLoad.ToString());
         yield break;
     }
 
 }
-*/
