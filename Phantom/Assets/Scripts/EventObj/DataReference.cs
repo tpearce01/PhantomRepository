@@ -12,7 +12,7 @@ public class DataReference {
         "Player",
         "Companion"
     };
-	
+
 }
 
 // Scenes which may be loaded to
@@ -21,5 +21,7 @@ public enum Scenes {
     MainMenu,
     EndScene,
     Carousel,
-    HighwayRoad
+    HighwayRoad,
+    HauntedHouse,
+    HauntedHouseInside,
 }
