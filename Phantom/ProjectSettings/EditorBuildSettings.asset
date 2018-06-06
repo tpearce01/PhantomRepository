@@ -17,3 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InsidetheEmployeeLounge.unity
     guid: adc4146c91dc50b47bfa4bc3eeaff9b7
+  - enabled: 1
+    path: Assets/Scenes/ferriswheelwithoutrobbie.unity
+    guid: ae1fa24c48978d749a89a407333cc3c8
+  - enabled: 1
+    path: Assets/Scenes/ferriswheelwithrobbie.unity
+    guid: 35354de0aaabade4f9450c9f4de5da88
+  m_configObjects: {}
