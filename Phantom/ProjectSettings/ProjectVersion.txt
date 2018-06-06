@@ -1,9 +1,5 @@
 <<<<<<< HEAD
-m_EditorVersion: 2017.3.0f3
+m_EditorVersion: 2018.1.0f2
 =======
-<<<<<<< HEAD
-m_EditorVersion: 2017.4.1f1
-=======
-m_EditorVersion: 2017.3.1f1
->>>>>>> alexs-test-branch
+m_EditorVersion: 2018.1.1f1
 >>>>>>> master
