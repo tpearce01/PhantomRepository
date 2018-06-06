@@ -15,7 +15,7 @@ public class Phantom_endscene : MonoBehaviour {
         CameraFollow.AddTarget(followTarget);
     }
 
-	void Update () {
+	void FixedUpdate () {
         transform.position = startPosition + new Vector3(0, Mathf.Sin(Time.time)*0.1f, 0);  // Move in sin pattern
     }
 }
