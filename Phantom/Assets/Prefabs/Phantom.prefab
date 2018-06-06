@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4142481758689248}
-  - component: {fileID: 212521503026987376}
-  - component: {fileID: 114460434563695838}
+  - component: {fileID: 114299664628235820}
+  - component: {fileID: 212253670845934062}
   m_Layer: 0
   m_Name: Phantom
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114460434563695838
+--- !u!114 &114299664628235820
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -52,7 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d52ae2429639845a1365f5c963eeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212521503026987376
+  followTarget: {fileID: 1457413009506924, guid: fd66748fca802814db0c78d927f37f80,
+    type: 2}
+--- !u!212 &212253670845934062
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

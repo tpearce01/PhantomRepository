@@ -32,6 +32,10 @@ public static class Inventory {
                     SampleKeyItem newItem = InventoryUIManager.instance.gameObject.AddComponent<SampleKeyItem>();
                     items.Add(newItem);
                     break;
+                //case "Journal1":
+                //    Journal1 newItem = InventoryUIManager.instance.gameObject.AddComponent<Journal1>();
+                //    items.Add(newItem);
+                //    break;
                 default:
                     Debug.Log("Failed to set Inventory Item during Load");
                     break;

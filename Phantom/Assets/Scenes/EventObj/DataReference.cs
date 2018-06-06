@@ -12,11 +12,16 @@ public class DataReference {
         "Player",
         "Companion"
     };
-	
+
 }
 
 // Scenes which may be loaded to
 public enum Scenes {
     driving_to_the_park,
-
+    MainMenu,
+    EndScene,
+    Carousel,
+    HighwayRoad,
+    HauntedHouse,
+    HauntedHouseInside,
 }

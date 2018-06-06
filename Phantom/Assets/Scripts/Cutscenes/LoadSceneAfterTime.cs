@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LoadSceneAfterTime : MonoBehaviour {
     public float timeToLoad;
-    public string sceneToLoad;
+    public Scenes sceneToLoad;
     public bool withFade = false;
     bool isFading = false;
     public GameObject fadePanel;
@@ -19,7 +19,7 @@ public class LoadSceneAfterTime : MonoBehaviour {
                 StartCoroutine(Fade());
             }
             else if (!withFade) {
-                SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(sceneToLoad.ToString());
             }
         }
 	}
@@ -33,6 +33,6 @@ public class LoadSceneAfterTime : MonoBehaviour {
             yield return new WaitForSeconds(0.02f);
         }
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad.ToString());
     }
 }
