@@ -36,3 +36,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide
+Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide-shm
+Phantom/.vs/Phantom/v15/Server/sqlite3/storage.ide-wal
