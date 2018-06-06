@@ -23,7 +23,7 @@ public class changetodiner : Event
         overlay.FadeIn(fadeTime);
         yield return new WaitForSeconds(fadeTime);
 
-        SceneManager.LoadScene("InsidetheEmployeeLounge");
+        SceneManager.LoadScene("ferriswheelwithrobbie");
         yield break;
     }
 
