@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a6e0b3b79bdf9254583b6356f35237b9
+  - enabled: 1
+    path: Assets/Scenes/driving_to_the_park.unity
+    guid: 5da2556cca9e46c4e84493bea267f60e
+  - enabled: 1
     path: Assets/Scenes/HauntedHouse.unity
     guid: d94ba3d7458026c4591313e3696fa03c
   - enabled: 1
@@ -26,3 +32,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InsidetheEmployeeLounge.unity
     guid: adc4146c91dc50b47bfa4bc3eeaff9b7
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 764496cd76cca424296dd7113d736091
+  - enabled: 1
+    path: Assets/Scenes/HighwayRoad.unity
+    guid: 67ff21594bcff214393a4458e6062e0d
+  - enabled: 1
+    path: Assets/Scenes/Hut.unity
+    guid: dab81797940a766469e11140c6d896c8
+  - enabled: 1
+    path: Assets/Scenes/InsideMainSquare.unity
+    guid: 622c3ec90f30df44794536ac6ed7a734
+  - enabled: 1
+    path: Assets/Scenes/Main_entrance.unity
+    guid: 19f75d5894a470f4495e50df4bcef632
+  m_configObjects: {}

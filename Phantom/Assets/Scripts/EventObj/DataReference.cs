@@ -24,4 +24,11 @@ public enum Scenes {
     HighwayRoad,
     HauntedHouse,
     HauntedHouseInside,
+    Hut,
+    InsideDiner,
+    InsideMainSquare,
+    InsidetheEmployeeLounge,
+    InsideTheEmployeeLoungeCutScene,
+    Main_entrance,
+    OutsideDiner
 }
