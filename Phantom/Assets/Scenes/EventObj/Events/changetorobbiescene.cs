@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
     Event to change scenes. Specift the scene to load from the dropdown in the Unity inspector.
     blackOverlayPrefab should not be changed - It needs to be the overlay prefab to fade out properly
      */
-public class changetodiner : Event
+public class changetorobbiescene : Event
 {
     //public Scenes sceneToLoad;              // Scene to load
     public float delay;                     // Delay before the fading starts
@@ -23,9 +23,8 @@ public class changetodiner : Event
         overlay.FadeIn(fadeTime);
         yield return new WaitForSeconds(fadeTime);
 
-        SceneManager.LoadScene("OutsideDiner");
+        SceneManager.LoadScene("ferriswheelwithrobbie");
         yield break;
     }
 
 }
-
