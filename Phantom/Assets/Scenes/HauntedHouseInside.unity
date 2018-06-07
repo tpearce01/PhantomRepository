@@ -2126,6 +2126,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: timeBetweenText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: dialogue
+      value: 'Christopher: "A Journal entry. Might be cool to keep."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
   m_IsPrefabParent: 0
@@ -2261,7 +2276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1492607551797890, guid: 71729748eeeeaa54b8daffaa5acaf609, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114221516416341016, guid: 71729748eeeeaa54b8daffaa5acaf609,
         type: 2}
