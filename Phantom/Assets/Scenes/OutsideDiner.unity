@@ -587,9 +587,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 676402212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322737c0734690041aceb0101edd276d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aca14c9768c6f944815882fb06151db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 5
   delay: 1
   blackOverlayPrefab: {fileID: 1863323461550406, guid: 8cec31e91ec48414b90a17e918188f71,
     type: 2}
