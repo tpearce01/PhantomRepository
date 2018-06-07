@@ -706,31 +706,30 @@ Prefab:
     - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: dialogue
-      value: "Veronica: \"Tell me why we're going again?\"-\r\nRobbie: \"It's her
-        birthday.\"\r\nVeronica: \"I know that. I mean, why here?\"\r\nRobbie: \"Well
-        you know she's always been like this, looking for adventure and whatnot. And
-        she's been dying for weeks to check out this park.\"\r\nVeronica: \"Great.
-        So we're going to an abandoned park for her birthday because she wants to
-        see some broken buildings.\"\r\nRobbie: \"You can't forget about the ghosts.\"\r\nVeronica:
-        \"Right...the ghosts. Wait, aren't there security guards?\"\r\nRobbie: \"Yvette
-        said she had that covered. Apparently she scoped it out last week. One security
-        guard roams the premises but only around the perimeter. People are able to
-        sneak in and out all the time so we should be ok once we actually get inside.
-        There's no surveillance cameras either.\"\r\nVeronica: \"I still think this
-        is stupid.\"\r\n*momentary silence*\r\nVeronica: \"So how much longer is it
-        'til we're there?\"\r\nRobbie: \"Almost. It's only about two more miles. Hey
-        Chris, you ok? You haven't really said anything this whole time.\"\r\nChristopher:
-        \"Uh, I'm fine. It's just...I'm not really into this whole idea.\"\r\nRobbie:
-        \"You mean the curse?\"\r\nChristopher: \"...\"\r\nVeronica: \"Oooh. Are you
-        telling me you're scared?\"                                       \t\r\nChristopher:
-        \"Maybe just a little.\"\r\nRobbie: \"It's all just hoaxes and stories. I
-        don't think anything's going to happen. We should be fine.\"\r\nChristopher:
-        \"Yeah...just fine...\"\r\n\n"
+      value: "Veronica: Tell me why we're going again?\r\nRobbie: It's his birthday.\r\nVeronica:
+        I know that. I mean, why here?\r\nRobbie: Well you know he's always been like
+        this, looking for adventure and whatnot. And he's been dying for weeks to
+        check out this park.\r\nVeronica: Great. So we're going to an abandoned park
+        for his birthday because he wants to see some broken buildings.\r\nRobbie:
+        You can't forget about the ghosts.\r\nVeronica: Right...the ghosts. Wait,
+        aren't there security guards?\r\nRobbie: Brian said he had that covered. Apparently
+        he scoped it out last week. One security guard roams the premises but only
+        around the perimeter. \nRobbie: People are able to sneak in and out all the
+        time so we should be ok once we actually get inside. There's no surveillance
+        cameras either.\r\nVeronica: I still think this is stupid.\n\n\n\n\nVeronica:
+        So how much longer is it 'til we're there?\r\nRobbie: Almost. It's only about
+        two more miles. Hey Chris, you ok? You haven't really said anything this whole
+        time.\r\nChristopher: Uh, I'm fine. It's just...I'm not really into this whole
+        idea.\r\nRobbie: You mean the curse?\r\nChristopher: ...\r\nVeronica: Oooh.
+        Are you telling me you're scared?\r\nChristopher: Maybe just a little.\r\nRobbie:
+        It's all just hoaxes and stories. I don't think anything's going to happen.
+        We should be fine.\r\nChristopher: Yeah...just fine...\n\n\n\n\nChristopher:
+        Hey...did you guys see that?\r\nVeronica: What?\r\nChristopher: Nothing...nevermind."
       objectReference: {fileID: 0}
     - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
         type: 2}
       propertyPath: timeBetweenText
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
