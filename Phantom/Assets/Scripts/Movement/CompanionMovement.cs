@@ -61,6 +61,7 @@ public class CompanionMovement : MonoBehaviour {
             }
             else
             {
+                
                 animator.SetBool("Walking", true);
                 if (agent.velocity.x > 0)
                 {
