@@ -10,6 +10,8 @@ public class Billboard : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gameObject.transform.position = showAtPos;
+        // Adding this here since this is the only scene that uses it. 
+        AudioManager.instance.PlaySoundLoop(Sound.Track1);
 	}
 	
 	// Update is called once per frame
