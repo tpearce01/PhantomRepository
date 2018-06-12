@@ -185,7 +185,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &206038577
 Prefab:
@@ -224,7 +224,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4068654919741046, guid: 6bce57c2adbb7384ea9bd10fd5be8209, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bce57c2adbb7384ea9bd10fd5be8209, type: 2}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 442895334}
   - component: {fileID: 442895333}
   m_Layer: 0
-  m_Name: Veronica
+  m_Name: Veronica_
   m_TagString: Follow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605430815
 GameObject:
@@ -330,7 +330,7 @@ Transform:
   m_Children:
   - {fileID: 1353144578}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619959977
 GameObject:
@@ -385,7 +385,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -412,7 +412,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &619959982
 MonoBehaviour:
@@ -453,7 +453,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &714320818
 SpriteRenderer:
@@ -572,7 +572,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199661280
 GameObject:
@@ -646,7 +646,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1251508439
 Prefab:
@@ -685,7 +685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4113692488251384, guid: 0148a36483a745a4ca49c4c1145f4a72, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114512285778729664, guid: 0148a36483a745a4ca49c4c1145f4a72,
         type: 2}
@@ -805,130 +805,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4743724720053810, guid: cb0c0b9aec31f8e43a6d0bed2526408d,
     type: 2}
   m_PrefabInternal: {fileID: 1580391667}
---- !u!1 &1493360020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1493360022}
-  - component: {fileID: 1493360021}
-  m_Layer: 0
-  m_Name: Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1493360021
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1493360020}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4c05916af8e5f4249b15228b7a454a5f, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1493360022
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1493360020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.0318, y: 0.9180034, z: -9.952756}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1580391667
 Prefab:
   m_ObjectHideFlags: 0
@@ -1027,7 +903,7 @@ Transform:
   m_Children:
   - {fileID: 1430403996}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1611734314
 MonoBehaviour:
@@ -1149,7 +1025,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1928200832
 Prefab:
@@ -1321,7 +1197,127 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4087681190532000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: dialogue
+      value: "Christopher: \u201CAccording to the journal entries, this must be the
+        owner\u2026\u201D\r\nAshley: \u201CMhmm. He\u2019s the one who trapped you
+        all here.\u201D\r\nYvette: \u201CSo what do we do now?\u201D\r\nAshley: \u201CYou
+        have to force his spirit to go away by making his body disappear. Then and
+        I\u2019ll follow him!\r\nChristopher: \u201CDisappear..?\u201D\r\nRobbie:
+        \u201CLike, make his body nonexistent?\u201D\r\nVeronica: \u201CDon\u2019t
+        take it too literally, Robbie. Science is still a thing.\u201D\r\nCaroline:
+        \u201CGetting rid of his body\u2026 so we can\u2019t just bury it or hide
+        it.\u201D\r\nYvette: \u201C... Can we\u2026 burn it..?\u201D\r\nChristopher:
+        \u201C... I guess it\u2019s worth a shot. We could use the stuff you found
+        in the diner, Yvette.\u201D\r\nChristopher: \u201CWould that work, Ashley?\u201D\r\nMan:
+        \u201CN O\u201D\r\nEveryone: \u201C!!\u201D\r\n\r\n\r\nChristopher: \u201CWhat
+        the--?!\u201D\r\nVeronica: \u201CI-I can\u2019t move!\u201D\r\nCaroline: \u201CWhat\u2019s\u2026
+        happening to us\u2026?\u201D\r\nMan: \u201CYou know nothing\u2026 NO ONE knows
+        ANYTHING.\u201D\r\nMan: \u201CMy dedication, my work, my love, my struggle\u2026\u201D\r\nMan:
+        \u201CMy loss, my pain, my misfortune, nor my misery--\u201D\r\nMan:\u201Cnobody
+        nobody nobody nobody NobodY nobOdynoboDY noBODynoboDy nobODynobODynoBOdY NoboDYNobodYNOboDYnoBODy--\u201D\r\nMan:\u201CnoBoDynObOdyNOBoDyNObodyNOBOdYNOBoDyNOBOdYNoBODYNOBODYNOBODYNOBODYNOBODYNOBODY--!!\u201D\r\nMan:
+        \u201CNOBODY understands!\u201D\r\nMan: \u201CSo I will stay here for as long
+        as it takes\u2026 and share my pain with everyone.\u201D\r\nMan: \u201CEven
+        if it takes an eternity for the world to understand, I will stay here. Forever.\u201D\r\nYvette:
+        \u201CLike hell we will, dirt bag!\u201D \r\nVeronica: \u201CWe have to get
+        out\u2026 but how?!\u201D\r\nCaroline: \u201CWhere\u2019s Ashley?! Can\u2019t
+        she do anything about this?\u201D\r\nRobbie: \u201CAshley, we need you!\u201D\r\nAshley:
+        \u201CN-Nnngh\u2026\u201D\r\nMan: \u201CTurning to my poor daughter to help
+        you? How lowly, forcing such a kind-hearted young girl to benefit you pathetic
+        lot.\u201D\r\nYvette: \u201CAs if, scum! She\u2019s been helping us trying
+        to stop your crazy arse!\u201D\r\nMan: \u201CNonsense! Ashley, come to my
+        side this instant!\u201D\r\nAshley: \u201C....\u201D\r\nMan: \u201CAshley,
+        dear, you understand, don\u2019t you? After all, this park was built for you.\u201D\r\nMan:
+        \u201CIt makes you sad that so many bad things happened because of that gypsy,
+        right? You were watching over me, weren\u2019t you? Don\u2019t you understand?\u201D\r\nAshley:
+        \u201C... I-I\u2026\u201D\r\nChristopher: \u201C...\u201D\r\nChristopher:
+        \u201CThe one who doesn\u2019t understand is you, old man.\u201D\r\nMan: \u201CQuiet!
+        You know nothing, outsider!\u201D\r\nChristopher: \u201CI know more than you
+        do, that\u2019s for sure.\u201D\r\nChristopher: \u201CYou think Ashley cares
+        about some stupid gypsy curse? Or even this park?\u201D\r\nChristopher: \u201CNope.
+        There\u2019s only one thing that matters to her, and it isn\u2019t revenge
+        fueled by spite.\u201D\r\nMan: \u201C..Do you understand your circumstance,
+        boy? I ought to kill you, right here and now\u2026\u201D\r\nAshley: \u201CNo!
+        Don\u2019t!\u201D\r\nAshley: \u201CDaddy, he\u2019s right! Please, listen
+        to him!\u201D\r\nMan: \u201CWhat? But, Ashley--\u201D\r\nAshley: \u201CI loved
+        this park, really! It was so pretty and fun.\u201D\r\nAshley: \u201CBut I
+        only loved coming here because I was with you! You were always so happy here,
+        and that made ME happy.\u201D\r\nAshley: \u201CI\u2019m sad that I got sick
+        and left you. I didn\u2019t like seeing you upset, either. But I don\u2019t
+        want people to get hurt because of me!\u201D \r\nAshley: \u201CI just want
+        you to be happy again. I don\u2019t want you hurting anymore.\u201D \r\nAshley:
+        \u201CI want to go to that special place good people go to that you told me
+        about, and I want to go there with you!\u201D\r\nMan: \u201C...\u201D\r\nAshley:
+        \u201CPlease, let go of these people! I don\u2019t want you hurting anyone
+        anymore, this isn\u2019t like you!\u201D\r\nMan: \u201CI\u2019ve spent years
+        fuelling my rage, dear. Changing so easily is not simple.\u201D\r\nAshley:
+        \u201CWhy isn\u2019t it? Why do you want to stay here so badly?! Do you like
+        this place more than me?!\u201D\r\nMan: \u201CAshley\u2026\u201D\r\nAshley:
+        \u201CI don\u2019t like it! You\u2019re so scary now, and you won\u2019t even
+        listen to me!\u201D\r\nAshley: \u201CI just want to go someplace where things
+        can be like before, so why\u2026? Why do you want to stay here so badly?!\u201D\r\nMan:
+        \u201C...Dear, please. Give me time to think.\u201D\r\nChristopher: \u201CWhat\u2019s
+        there to think about, old man? You have a daughter that loves you. What more
+        do you need?\u201D\r\nMan: \u201CMy daughter\u2026.\u201D\r\nMan: \u201C...You\u2019re
+        right. I\u2019ve worked so hard for her satisfaction, not my own.\u201D\r\n\n\nVeronica:
+        \u201CWhat the-?\u201D\r\nCaroline: \u201CI can move my arms again\u2026\u201D\r\nRobbie:
+        \u201CHe let us go..?\u201D\r\nMan: \u201CI realize it now, I\u2019m long
+        past due for retirement. I\u2019ve lost sight of what was important, but I
+        hope to make amends starting now.\u201D\r\nAshley: \u201CDaddy..!\u201D\r\nMan:
+        \u201CI apologize for neglecting my role as your father for so long, dear.
+        I hope you\u2019ll find it in your heart to forgive me.\u201D\r\nAshley: \u201CNo\u2026
+        No, it\u2019s okay!\u201D\r\nMan: \u201C...You all.\u201D\r\nVeronica: \u201CU-Us?\u201D\r\nMan:
+        \u201CThough I know it\u2019s too late, I\u2019d like to apologize to you
+        all, and request for your help.\u201D\r\nMan: \u201CMy soul has been ensnared
+        in this park, and it can not be released until the body that binds it down
+        is removed.\u201D\r\nChristopher: \u201CSay no more. We\u2019ll set you two
+        free.\u201D\r\nMan: \u201CYou have my thanks.\u201D\r\nAshley: \u201CYippeee!!
+        I finally get to leave with daddy!\u201D\r\nYvette: \u201CHold on. So once
+        the body\u2019s burned, we can leave no problem, right?\u201D\r\nMan: \u201CThough
+        I\u2019ve trapped you here, the gypsy\u2019s curse has likely caught hold
+        of all of you.\u201D \r\nMan: \u201CTo escape future misfortune, you must
+        break the tablet. Then, you shall truly be free.\u201D\r\nYvette: \u201CJesus\u2026
+        Thank god I asked.\u201D\r\nRobbie: \u201CNo kidding.\u201D\r\nAshley: \u201CAlright,
+        you guys will free my daddy, right?\u201D\r\nChristopher: \u201CWe got it
+        covered.\u201D\r\nAshley: \u201CYay! Then I\u2019ll get going, okay? I\u2019ll
+        be waiting for you, daddy!\u201D\r\nMan: \u201CI\u2019ll see you soon, my
+        dear.\u201D\r\n\r\n\r\nCaroline: \u201CWait\u2026 She can leave? Then, why
+        did she stay?\u201D\r\nChristopher: \u201CTake a guess.\u201D\r\nMan: \u201C...\u201D\r\nMan:
+        \u201CShe\u2019s too good a child for spite and bitterness to keep her spirit
+        rooted here.\u201D\r\nMan: \u201C\u2018That special place good people go...\u2019
+        I pray she\u2019ll forgive me for lying to her.\u201D\r\nChristopher: \u201C...
+        I\u2019m sorry.\u201D\r\nMan: \u201CYour pity is underserved. Please, grant
+        my daughter\u2019s final wish and release me.\u201D\r\nChristopher: \u201CYea.\u201D\r\nVeronica:
+        \u201CWine is flammable, right? We can use that\u2026\u201D\r\nYvette: \u201CAnd
+        I\u2019ve got the matches over here. Let\u2019s get started\u2026\u201D\r\n\r\n\n\n\r\nRobbie:
+        \u201CPhew\u2026 they\u2019re gone\u2026\u201D\r\nVeronica: \u201COh man,
+        I think I\u2019m starting to see a bit of daylight coming up. What a night..\u201D\r\nYvette:
+        \u201CSo once we break the tablet, we can all leave, right?\u201D\r\nCaroline:
+        \u201CYea. Where\u2019s the tablet?\u201D\r\nChristopher: \u201CI have it
+        here.\u201D\r\nRobbie: \u201CAlright my man. Charge that thing into the floor!\u201D\r\nChristopher:
+        \u201C....Actually\u2026\u201D\r\nCaroline: \u201CHmm?\u201D\r\nChristopher:
+        \u201CWhy don\u2019t\u2026 we all do it?\u201D\r\nEveryone: \u201C...\u201D\r\nVeronica:
+        \u201CPffff\u2026 Hahahaha!\u201D\r\nCaroline: \u201CAwww, that\u2019s so
+        sweet\u2026\u201D\r\nYvette: \u201CWhat are you, a video game protagonist?\u201D\r\nRobbie:
+        \u201CGod, you are SO lame Chris.\u201D\r\nChristopher: \u201COk, thanks for
+        the unneeded feedback guys. I\u2019ll go break it now.\u201D\r\nYvette: \u201CNo!
+        You can\u2019t take it back!\u201D\r\nChristopher: \u201CYou all literally
+        just made fun of me.\u201D\r\nRobbie: \u201COnly \u2018cuz we love you, Chris.\u201D\r\nCaroline:
+        \u201CI want us all to do it. Can we, please?\u201D\r\nVeronica: \u201CYea!
+        Come on, everyone, grab hold of it!\u201D\r\nChristopher: \u201CGo away. I
+        hate you all.\u201D\r\nRobbie: \u201CHey, don\u2019t be like that! Come on,
+        count us down!\u201D\r\nChristopher: \u201CHumph. Fine.\u201D\r\nChristopher:
+        \u201CYou all ready?\u201D\r\nEveryone: \u201CYea!\u201D\r\nChristopher: \u201CAll
+        right. On the count of three.\r\nChristopher: \u201COne\u2026\u201D\r\nChristopher:
+        \u201CTwo\u2026\u201D\r\nChristopher: \u201CThree!\u201D\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730492549628018, guid: 2c28e67af8c7e4de495c793ad2eeeada,
+        type: 2}
+      propertyPath: timeBetweenText
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c28e67af8c7e4de495c793ad2eeeada, type: 2}

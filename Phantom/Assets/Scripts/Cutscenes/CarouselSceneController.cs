@@ -21,6 +21,7 @@ public class CarouselSceneController : MonoBehaviour {
     void Start() {
         overlay = Instantiate(blackOverlayPrefab).GetComponent<BlackOverlaySetup>();
         overlay.FadeOut(fadeTime);
+        AudioManager.instance.PlaySoundLoop(Sound.Track2);
     }
 
     void FixedUpdate() {
@@ -66,6 +67,7 @@ public class CarouselSceneController : MonoBehaviour {
 
         // Scene End
         if (timer >= 654 && !sceneEnd) {
+            AudioManager.instance.EndAllSoundsFade(3);
             StartCoroutine(changeSceneEvent.TriggerEvent());
             sceneEnd = true;
         }

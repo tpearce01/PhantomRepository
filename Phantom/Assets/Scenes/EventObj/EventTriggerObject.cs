@@ -71,7 +71,8 @@ public class EventTriggerObject : MonoBehaviour {
 
     // Trigger event if player enters range && this is the target event
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Player") && Player.targetEvent == gameObject.gameObject.name) {
+        Debug.Log(transform.parent.gameObject.name);
+        if (other.gameObject.CompareTag("Player") && Player.targetEvent == transform.parent.gameObject.name) {
             Player.targetEvent = null;
             eventManager.TriggerEvent();
         }
@@ -79,6 +80,6 @@ public class EventTriggerObject : MonoBehaviour {
 
     // Set this event as the Player's target event
     void OnMouseDown() {
-        Player.targetEvent = gameObject.gameObject.name;
+        Player.targetEvent = transform.parent.gameObject.gameObject.name;
     }
 }

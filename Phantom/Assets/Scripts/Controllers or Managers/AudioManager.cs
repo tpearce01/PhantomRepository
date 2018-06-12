@@ -250,4 +250,5 @@ public enum Sound{
     Zipper = 45,
 
     // BGM
+    Track2 = 46
 }
